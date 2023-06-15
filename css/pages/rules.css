@@ -1,0 +1,298 @@
+@import "css/global.css";
+
+/*Header*/
+#header {
+    background: url("../../images/header-background.jpg") no-repeat fixed center;
+    min-width: 100%;
+    min-height: 400px;
+    height: 30vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 150px;
+    width: 100%;
+}
+
+#header .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .content .info .minecraft-server-ip {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+#header .content .info .title span {
+    color: var(--main-color);
+}
+
+#header .content .description {
+    color: var(--description-color);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/*Rules*/
+#rules .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#rules .warning {
+    background: var(--warning-background);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rules .warning p {
+    color: var(--warning-color);
+    font-size: 17px;
+}
+
+#rules .warning .icon {
+    border-radius: 5px;
+    background: var(--warning-icon-background);
+    padding: 10px;
+    transition: .2s ease-in-out;
+}
+
+#rules .warning .icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: relative;
+    background: var(--red-color);
+    color: var(--white-color);
+    border-radius: 5px;
+}
+
+#rules .warning:hover .icon {
+    transform: scale(1.1);
+}
+
+#rules .rules {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#rules .rules .rules-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+    position: relative;
+}
+
+#rules .rules .rules-title::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 150px;
+    height: 1px;
+    border-radius: 5px;
+    background: var(--description-color);
+}
+
+#rules .rules .rules-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+#rules .rules .rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+#rules .rules .rules-list .rule {
+    color: var(--description-color);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#rules .rules .rules-list .rule span {
+    color: var(--main-color);
+}
+
+/*Server Join*/
+#join-server{
+    background: var(--stats-background);
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#join-server .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#join-server .content .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+    position: relative;
+    text-align: center;
+}
+
+#join-server .content .section-title span {
+    color: var(--main-color);
+}
+
+#join-server .content .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#join-server .content .buttons .copy-ip {
+    background: var(--copy-ip-button-background);
+    border: 2px solid var(--main-color);
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: var(--white-color);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#join-server .content .buttons .join-discord {
+    background: var(--how-to-join-button-background);
+    border: 2px solid var(--description-color);
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: var(--description-color);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#join-server .content .buttons .copy-ip:hover, #join-server .content .buttons .join-discord:hover {
+    opacity: 0.8;
+}
+
+#join-server .content .ip-copied {
+    color: var(--green-color);
+    background: var(--ip-copied-background);
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 17px;
+    display: none;
+}
+
+#join-server .content .ip-copied.active {
+    display: flex;
+}
+
+#join-server .content .ip-copied.error {
+    background: var(--warning-background);
+    color: var(--red-color);
+}
+
+
+/*Responsive*/
+/*Header*/
+@media screen and (max-width: 1625px) {
+    #header .content {
+        padding: 150px 90px;
+    }
+}
+
+@media screen and (max-width: 1361px) {
+    #header .content {
+        flex-direction: column;
+        padding: 120px 90px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #header .content {
+        padding: 150px 30px;
+    }
+
+    #header .content .info .minecraft-server-ip {
+        font-size: 15px;
+    }
+
+    #header .content .info .title {
+        font-size: 40px;
+    }
+
+    #header .content .info .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #header .content {
+        justify-content: start;
+        align-items: start;
+    }
+
+    #header .content .info .title {
+        font-size: 30px;
+    }
+}
+
+/*Rules*/
+@media screen and (max-width: 462px) {
+    #rules .warning {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/*Server Join*/
+@media screen and (max-width: 380px) {
+    #join-server .content .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+}

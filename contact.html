@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Free, modern and nice web template for Minecraft server.">
+  <meta name="author" content="Astronawta">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+
+  <title>AzureMine | Contact</title>
+</head>
+<body>
+  <!--Navbar-->
+  <div class="navbar">
+    <div class="menu-mobile">
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/logo.png" alt="Server logo" class="logo-img">
+          <h3 class="server-name">ExampleName</h3>
+        </div>
+      </a>
+
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="index.html" class="link">Start</a>
+      <a href="rules.html" class="link">Regulamin</a>
+      <a href="#" class="link">Sklep</a>
+      <a href="admin-team.html" class="link">Team</a>
+      <a href="contact.html" class="link active">Kontakt</a>
+    </div>
+  </div>
+
+  <!--Header-->
+  <section id="header">
+    <div class="content">
+      <div class="info">
+        <p class="minecraft-server-ip">mc.example.com</p>
+        <h1 class="title"><span>Skontatuj się</span> z nami</h1>
+      </div>
+      <p class="description">
+        Masz problem lub pytanie? Napisz do nas.
+      </p>
+    </div>
+  </section>
+
+  <!--Contacts-->
+  <section id="contacts">
+    <div class="content">
+      <h2 class="section-title">Kontakt</h2>
+
+      <div class="columns">
+        <form class="contact-form" action="" method="POST">
+          <input type="hidden" name="_subject" value="Message From Website">
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="" class="location-after-submit">
+
+          <div class="row">
+            <label for="name">* In-game username (or Real name)</label>
+            <input type="text" required id="name" name="name" placeholder="Astronawta">
+          </div>
+          <div class="row">
+            <label for="discord-name">Discord username + tag</label>
+            <input type="text" id="discord-name" name="discord-name" placeholder="Astronawta#0012">
+          </div>
+          <div class="row">
+            <label for="email">* Email</label>
+            <input type="email" required id="email" name="email" placeholder="astronawta@example.com">
+          </div>
+          <div class="row">
+            <label for="message">* Message</label>
+            <textarea required id="message" name="message" placeholder="I have a question..."></textarea>
+          </div>
+          <div class="form-footer">
+            <p class="alert">Fields marked with * are required</p>
+            <button type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </form>
+
+        <a href="#" class="url discord-link">
+          <div class="link">
+            <h5>Dołącz do discorda</h5>
+            <div class="link-description">
+              <p class="description">
+                Na co czekasz? Wbijaj!
+                <br>--------------
+                <br><span class="discord-online-users">None</span> online
+              </p>
+              <div class="icon">
+                <i class="fa-brands fa-discord"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer id="footer">
+    <p class="copyright">&copy; 2023 <span class="server-name-footer">SkyBlock.pl</span>. Wszelkie prawa zastrzeżone.</p>
+    <div class="social-links">
+      <a href="#" class="link tiktok-link"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" class="link instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#" class="link discord-link-footer"><i class="fa-brands fa-discord"></i></a>
+    </div>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/cbf5ee59c8.js" crossorigin="anonymous"></script>
+</html>
