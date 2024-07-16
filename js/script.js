@@ -7,8 +7,8 @@ If something doesn't work please contact me on discord (Astronawta#0012).
 const config = {
     serverInfo: {
         serverLogoImageFileName: "logo.png", /*This is a file name for logo in /images/ (If you upload new logo with other name, you must change this value)*/
-        serverName: "SkyBlock.pl", /*Server name*/
-        serverIp: "SkyBlock.pl", /*Server IP (if you want to add online user counter, you must have true the enable-status and enable-query of server.properties)*/
+        serverName: "GlobMc.pl", /*Server name*/
+        serverIp: "globmc.pl", /*Server IP (if you want to add online user counter, you must have true the enable-status and enable-query of server.properties)*/
         discordServerID: "489529070913060867" /*Your server ID (if you want to add online user counter, you must have enabled Discord server widget)*/
     },
 
@@ -47,7 +47,7 @@ const config = {
         zarząd: [
             {
                 inGameName: "Norbit4",
-                rank: "Właściciel",
+                rank: "Admin",
                 skinUrlOrPathToFile: "",
                 rankColor: "rgba(255, 3, 3, 1)"
             },
@@ -246,54 +246,66 @@ const setDataFromConfigToHtml = async () => {
         copyIp();
     }
     else if(locationPathname.includes("admin-team")) {
-        for (let team in config.adminTeamPage) {
-            const atContent = document.querySelector(".at-content");
-            
-            const group = document.createElement("div");
-            group.classList.add("group");
-            group.classList.add(team);
+        const teamContent = config.adminTeamPage
 
-            const groupSchema = `
-                <h2 class="rank-title">${team.charAt(0).toUpperCase() + team.slice(1)}</h2>
-                <div class="users">
-                </div>
-            `;
-
-            group.innerHTML = groupSchema;
-
-            atContent.appendChild(group);
-
-            for (let j = 0; j < config.adminTeamPage[team].length; j++) {
-                let user = config.adminTeamPage[team][j];
-                const group = document.querySelector("." + team + " .users");
-
-                const userDiv = document.createElement("div");
-                userDiv.classList.add("user");
-
-                let userSkin = config.adminTeamPage[team][j].skinUrlOrPathToFile;
-
-                if(userSkin == "") userSkin = await getSkinByUuid(user.inGameName);
-                let rankColor = config.atGroupsDefaultColors[team];
-
-                if(user.rankColor != "") {
-                    rankColor = user.rankColor;
-                }
-
-                const userDivSchema = `
-                    <img src="${await (userSkin)}" alt="${user.inGameName}">
-                    <h5 class="name">${user.inGameName}</h5>
-                    <p class="rank ${team}" style="background: ${rankColor}">${user.rank}</p>  
-                `;
-
-                userDiv.innerHTML = userDivSchema;
-                group.appendChild(userDiv);
-            }
+        for (let team in teamContent) {
+            updateTeam(team);
         }
     } else if(locationPathname.includes("contact")) {
         contactForm.action = `https://formsubmit.co/${config.contactPage.email}`;
         discordOnlineUsers.innerHTML = await getDiscordOnlineUsers();
         inputWithLocationAfterSubmit.value = location.href;
     }
+}
+
+const updateTeam = async (team) => {
+    const atContent = document.querySelector(".at-content");
+            
+    const group = document.createElement("div");
+    group.classList.add("group");
+    group.classList.add(team);
+
+    const groupSchema = `
+        <h2 class="rank-title">${team.charAt(0).toUpperCase() + team.slice(1)}</h2>
+        <div class="users">
+        </div>
+    `;
+
+    group.innerHTML = groupSchema;
+
+    atContent.appendChild(group);
+
+    for (let j = 0; j < config.adminTeamPage[team].length; j++) {
+        await new Promise(resolve => setTimeout(resolve, 10));
+        await updateUser(j, team);   
+    }
+    console.log("Updated team: " + team);
+}
+
+const updateUser = async (j, team) => {
+    let user = config.adminTeamPage[team][j];
+    const group = document.querySelector("." + team + " .users");
+
+    const userDiv = document.createElement("div");
+    userDiv.classList.add("user");
+
+    let userSkin = config.adminTeamPage[team][j].skinUrlOrPathToFile;
+
+    if(userSkin == "") userSkin = await getSkinByUuid(user.inGameName);
+    let rankColor = config.atGroupsDefaultColors[team];
+
+    if(user.rankColor != "") {
+        rankColor = user.rankColor;
+    }
+
+    const userDivSchema = `
+        <img src="${await (userSkin)}" alt="${user.inGameName}">
+        <h5 class="name">${user.inGameName}</h5>
+        <p class="rank ${team}" style="background: ${rankColor}">${user.rank}</p>  
+    `;
+
+    userDiv.innerHTML = userDivSchema;
+    group.appendChild(userDiv);
 }
 
 setDataFromConfigToHtml();
