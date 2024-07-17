@@ -263,3 +263,20 @@ section:not(#header) .content {
     text-align: center;
   }
 }
+
+#rang-box {
+  padding: 100px;
+  
+}
+
+th[data-mc="mc"] {
+  font-family: 'MinecraftiaRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.table {
+  background-color: rgba(0, 0, 0, 0.637) !important;
+  text-align: center;
+  border-radius: 25px;
+}
