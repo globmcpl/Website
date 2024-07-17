@@ -266,17 +266,27 @@ section:not(#header) .content {
 
 #rang-box {
   padding: 100px;
-  
 }
 
 th[data-mc="mc"] {
-  font-family: 'MinecraftiaRegular';
   font-weight: normal;
   font-style: normal;
 }
 
 .table {
-  background-color: rgba(0, 0, 0, 0.637) !important;
+  box-shadow: #1f1f1f 0px 0px 2px;
+  font-family: 'Inter';
+  font-size: 15px;
+  background-color: rgba(153, 153, 153, 0.13) !important;
   text-align: center;
   border-radius: 25px;
+}
+
+.fa-check{
+  color: #09d309;
+  font-weight: bold;
+}
+.fa-times{
+  color: #d80000;
+  font-weight: bold;
 }
