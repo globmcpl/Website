@@ -16,25 +16,31 @@ const config = {
         zarząd: [
             {
                 inGameName: "Norbit4",
-                rank: "Admin",
+                rank: "Administrator",
+                skinUrlOrPathToFile: "",
+                rankColor: "rgba(255, 3, 3, 1)"
+            },
+            {
+                inGameName: "Zioomkox",
+                rank: "Administrator",
                 skinUrlOrPathToFile: "",
                 rankColor: "rgba(255, 3, 3, 1)"
             },
         ],
-        moderacja: [
-            {
-                inGameName: "Astronavta",
-                rank: "Moderator",
-                skinUrlOrPathToFile: "",
-                rankColor: "rgba(53, 173, 89, 1)"
-            },
-            {
-                inGameName: "Astronavta",
-                rank: "Pomocnik",
-                skinUrlOrPathToFile: "",
-                rankColor: "rgb(158, 72, 194)"
-            }
-        ],
+        // moderacja: [
+        //     {
+        //         inGameName: "Astronavta",
+        //         rank: "Moderator",
+        //         skinUrlOrPathToFile: "",
+        //         rankColor: "rgba(53, 173, 89, 1)"
+        //     },
+        //     {
+        //         inGameName: "Astronavta",
+        //         rank: "Pomocnik",
+        //         skinUrlOrPathToFile: "",
+        //         rankColor: "rgb(158, 72, 194)"
+        //     }
+        // ],
         budowniczy: [
             {
                 inGameName: "MisielHeaven",
