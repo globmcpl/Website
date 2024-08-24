@@ -141,5 +141,4 @@ const setDataFromConfigToHtml = async () => {
             inputWithLocationAfterSubmit.value = location.href;
     }
 }
-
 setDataFromConfigToHtml();
