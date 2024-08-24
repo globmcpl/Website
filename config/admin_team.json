@@ -1,0 +1,40 @@
+{
+    "adminTeam": {
+        "zarzad": [
+            {
+                "inGameName": "Norbit4",
+                "rank": "Administrator",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(255, 3, 3, 1)"
+            },
+            {
+                "inGameName": "Zioomkox",
+                "rank": "Administrator",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(255, 3, 3, 1)"
+            }
+        ],
+        "moderacja": [
+            {
+                "inGameName": "Astronavta",
+                "rank": "Moderator",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(53, 173, 89, 1)"
+            },
+            {
+                "inGameName": "Astronavta",
+                "rank": "Pomocnik",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgb(158, 72, 194)"
+            }
+        ],
+        "budowniczy": [
+            {
+                "inGameName": "MisielHeaven",
+                "rank": "Budowniczy",
+                "skinUrlOrPathToFile": "./images/skin/default.png",
+                "rankColor": "rgb(243, 128, 58)"
+            }
+        ]
+    }
+}
