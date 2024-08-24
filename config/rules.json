@@ -1,0 +1,44 @@
+{
+    "minecraft": {
+      "name": "Serwer Minecraft",
+      "rules": [
+        "Nie używaj cheatów.",
+        "Nie obrażaj innych graczy.",
+        "Nie spamuj na czacie.",
+        "Szanuj administrację.",
+        "Nie reklamuj innych serwerów.",
+        "Nie używaj wulgaryzmów.",
+        "Nie nadużywaj błędów gry.",
+        "Nie griefuj budowli innych graczy."
+      ]
+    },
+    "discord": {
+      "name": "Serwer Discord",
+      "rules": [
+        "Bądź miły dla innych.",
+        "Nie spamuj na kanałach.",
+        "Nie reklamuj innych serwerów.",
+        "Słuchaj poleceń administratorów.",
+        "Używaj odpowiednich kanałów.",
+        "Nie używaj wulgaryzmów.",
+        "Nie publikuj NSFW.",
+        "Nie trolluj innych użytkowników."
+      ]
+    },
+    "more": {
+      "name": "Inne Zasady",
+      "rules": [
+        "Nie nadużywaj funkcji prywatnych wiadomości.",
+        "Zachowuj się zgodnie z normami społecznymi.",
+        "Nie publikuj fałszywych informacji.",
+        "Szanuj innych użytkowników.",
+        "Nie próbuj oszukiwać systemu.",
+        "Pamiętaj o ochronie swojej prywatności.",
+        "Nie udostępniaj danych osobowych.",
+        "Nie próbuj wyłudzać informacji."
+      ]
+    }
+  }
+
+  
+  
