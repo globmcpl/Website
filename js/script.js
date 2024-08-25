@@ -89,33 +89,6 @@ const getMinecraftOnlinePlayer = async () => {
     }
 }
 
-/*IP copy only works if you have HTTPS on your website*/
-const copyIp = () => {
-    const copyIpButton = document.querySelector(".copy-ip");
-    const copyIpAlert = document.querySelector(".ip-copied");
-
-    copyIpButton.addEventListener("click", () => {
-        try {
-            navigator.clipboard.writeText(config.serverInfo.serverIp);
-    
-            copyIpAlert.classList.add("active");
-
-            setTimeout(() => {
-                copyIpAlert.classList.remove("active");
-            }, 5000);
-        } catch (e) {
-            console.log(e);
-            copyIpAlert.innerHTML = "An error has occurred!";
-            copyIpAlert.classList.add("active");
-            copyIpAlert.classList.add("error");
-
-            setTimeout(() => {
-                copyIpAlert.classList.remove("active");
-                copyIpAlert.classList.remove("error");
-            }, 5000);
-        }
-    })
-}
 
 const setDataFromConfigToHtml = async () => {
     /*Set config data to navbar*/
@@ -133,8 +106,6 @@ const setDataFromConfigToHtml = async () => {
         serverLogoHeader.src = `images/` + config.serverInfo.serverLogoImageFileName;
         discordOnlineUsers.innerHTML = await getDiscordOnlineUsers();
         minecraftOnlinePlayers.innerHTML = await getMinecraftOnlinePlayer();
-    } else if(locationPathname.includes("rules")) {
-        copyIp();
     } else if(locationPathname.includes("contact")) {
             contactForm.action = `https://formsubmit.co/${config.contactPage.email}`;
             discordOnlineUsers.innerHTML = await getDiscordOnlineUsers();
