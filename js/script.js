@@ -25,14 +25,14 @@ const config = {
 /*If you want to change website color go to /css/global.css and in :root {} is a color pallete (don't change names of variables, change only values)*/
 
 /*Mobile navbar (open, close)*/
-const navbar = document.querySelector(".navbar");
-const navbarLinks = document.querySelector(".links");
-const hamburger = document.querySelector(".hamburger");
+// const navbar = document.querySelector(".navbar");
+// const navbarLinks = document.querySelector(".links");
+// const hamburger = document.querySelector(".hamburger");
 
-hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-    navbarLinks.classList.toggle("active");
-})
+// hamburger.addEventListener("click", () => {
+//     navbar.classList.toggle("active");
+//     navbarLinks.classList.toggle("active");
+// })
 
 /*FAQs*/
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
