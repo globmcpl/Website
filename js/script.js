@@ -28,8 +28,8 @@ const inputWithLocationAfterSubmit = document.querySelector(".location-after-sub
 
 const setDataFromConfigToHtml = async () => {
     /*Set config data to navbar*/
-    serverName.innerHTML = config.serverInfo.serverName;
-    serverLogo.src = `images/` + config.serverInfo.serverLogoImageFileName;
+    serverName.innerHTML = 'glomc.pl';
+    serverLogo.src = `images/` + 'logo.png';
 
     let locationPathname = location.pathname;
 

@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Czy serwer jest non premium?",
+        "answer": "Tak! Serwer jest non premium."
+    },
+    {
+        "question": "Na jaką wersje jest serwer?",
+        "answer": "Wejście na serwer jest możliwe tylko na wersjach 1.20+. Stawiamy tylko na najnowsze wersje!"
+    },
+    {
+        "question": "Czy gra na serwerze wymaga instalacji modyfikacji?",
+        "answer": "Nie, serwer dzięki specjalnym pluginom pozwala na grę bez modyfikacji!"
+    }
+]
