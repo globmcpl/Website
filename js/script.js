@@ -34,7 +34,7 @@ const setDataFromConfigToHtml = async () => {
     let locationPathname = location.pathname;
 
     if(locationPathname == "/" || locationPathname.includes("index")) {
-        serverLogoHeader.src = `images/` + config.serverInfo.serverLogoImageFileName;
+        //serverLogoHeader.src = `images/` + config.serverInfo.serverLogoImageFileName;
     } else if(locationPathname.includes("contact")) {
             contactForm.action = 'https://formsubmit.co/glomc.pl';
             inputWithLocationAfterSubmit.value = location.href;
