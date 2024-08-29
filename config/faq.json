@@ -5,10 +5,10 @@
     },
     {
         "question": "Na jaką wersje jest serwer?",
-        "answer": "Wejście na serwer jest możliwe tylko na wersjach 1.20+. Stawiamy tylko na najnowsze wersje!"
+        "answer": "Wejście na serwer jest możliwe tylko na wersji <b>1.21.1</b> Stawiamy tylko na najnowsze wersje!"
     },
     {
         "question": "Czy gra na serwerze wymaga instalacji modyfikacji?",
-        "answer": "Nie, serwer dzięki specjalnym pluginom pozwala na grę bez modyfikacji!"
+        "answer": "Nie, serwer dzięki specjalnym pluginom i datapackom pozwala na grę bez modyfikacji."
     }
 ]

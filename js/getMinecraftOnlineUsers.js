@@ -1,13 +1,13 @@
 const getMinecraftOnlinePlayers = async () => {
     try {
-        const apiUrl = `https://api.mcsrvstat.us/2/kokscraft.pl`;
+        const apiUrl = `https://api.mcsrvstat.us/2/globmc.pl`;
         let response = await fetch(apiUrl);
         let data = await response.json();
 
         return data.players.online;
     } catch (e) {
         console.log(e);
-        return "None";
+        return "";
     }
 }
 

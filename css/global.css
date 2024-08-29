@@ -9,7 +9,7 @@
 
 :root {
   --main-font: 'Inter', sans-serif;
-  --main-color: #46c292;
+  --main-color: #46b4c2;
   --background-color: #24272B;
   --white-color: #FFFFFF;
   --black-color: #000000;
@@ -17,12 +17,12 @@
 
   --green-color: #4aeaff;
   --ip-copied-background: rgba(15, 116, 163, 0.17);
-  --ip-copied-icon-background: rgba(16, 202, 171, 0.5);
+  --ip-copied-icon-background: rgba(16, 202, 193, 0.521);
 
-  --copy-ip-button-background: rgba(24, 180, 159, 0.836);
+  --copy-ip-button-background: rgba(24, 162, 180, 0.836);
   --how-to-join-button-background: rgba(210, 208, 208, 0.2);
   --stats-background: rgba(210, 208, 208, 0.05);
-  --stat-icon-background-2: rgba(41, 202, 127, 0.432);
+  --stat-icon-background-2: rgba(41, 178, 202, 0.432);
 
   --scroll-bar: rgba(210, 208, 208, 0.3);
   --scroll-bar-hover: #555555FF;
