@@ -1,4 +1,4 @@
-const getMinecraftOnlinePlayers = async () => {
+export const getMinecraftOnlinePlayers = async () => {
     try {
         const apiUrl = `https://api.mcsrvstat.us/2/globmc.pl`;
         let response = await fetch(apiUrl);
