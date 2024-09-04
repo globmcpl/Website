@@ -2,6 +2,7 @@
 
 /*Header*/
 #header {
+    position: relative;
     background: url("../../images/background.webp") no-repeat fixed center;
     min-width: 100%;
     min-height: 800px;
@@ -194,6 +195,28 @@
 
 #header .content .right .stats .stat .texts p span {
     color: var(--green-color);
+}
+
+#arrow-box {
+    position: absolute;
+    top: 70vh; 
+    left: 50vw; 
+    transform: translate(-50%, -50%); 
+    z-index: 10;
+}
+
+#arrow{
+    font-size: 4.5rem;
+}
+
+.fa-circle-down {
+    transition:0.5s;
+}
+
+.fa-circle-down:hover {
+    transition:0.5s;
+    font-size: 5rem;
+    color: #4dc8d8 !important;
 }
 
 /*About*/
@@ -751,6 +774,20 @@
 @media screen and (max-width: 383px) {
     #header .content .left .buttons {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #arrow-box {
+        top: 70vh; 
+        left: 50vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #arrow-box {
+        top: 60vh; 
+        left: 50vw;
     }
 }
 
