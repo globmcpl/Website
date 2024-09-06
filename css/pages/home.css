@@ -776,18 +776,21 @@
         flex-direction: column;
     }
 }
+@media (max-width: 1700px) {
+    #arrow-box {
+        visibility: hidden;
+    }
+}
 
 @media (max-width: 768px) {
     #arrow-box {
-        top: 70vh; 
-        left: 50vw;
+        visibility: hidden;
     }
 }
 
 @media (max-width: 480px) {
     #arrow-box {
-        top: 60vh; 
-        left: 50vw;
+        visibility: hidden;
     }
 }
 
