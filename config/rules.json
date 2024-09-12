@@ -1,44 +1,148 @@
-{
-    "minecraft": {
-      "name": "Serwer Minecraft",
-      "rules": [
-        "Nie używaj cheatów.",
-        "Nie obrażaj innych graczy.",
-        "Nie spamuj na czacie.",
-        "Szanuj administrację.",
-        "Nie reklamuj innych serwerów.",
-        "Nie używaj wulgaryzmów.",
-        "Nie nadużywaj błędów gry.",
-        "Nie griefuj budowli innych graczy."
-      ]
-    },
-    "discord": {
-      "name": "Serwer Discord",
-      "rules": [
-        "Bądź miły dla innych.",
-        "Nie spamuj na kanałach.",
-        "Nie reklamuj innych serwerów.",
-        "Słuchaj poleceń administratorów.",
-        "Używaj odpowiednich kanałów.",
-        "Nie używaj wulgaryzmów.",
-        "Nie publikuj NSFW.",
-        "Nie trolluj innych użytkowników."
-      ]
-    },
-    "more": {
-      "name": "Inne Zasady",
-      "rules": [
-        "Nie nadużywaj funkcji prywatnych wiadomości.",
-        "Zachowuj się zgodnie z normami społecznymi.",
-        "Nie publikuj fałszywych informacji.",
-        "Szanuj innych użytkowników.",
-        "Nie próbuj oszukiwać systemu.",
-        "Pamiętaj o ochronie swojej prywatności.",
-        "Nie udostępniaj danych osobowych.",
-        "Nie próbuj wyłudzać informacji."
-      ]
-    }
+[
+  {
+    "name": "REGULAMIN OGÓLNY GLOBMC",
+    "subsections": [
+      {
+        "name": "I. ZASADY OGÓLNE",
+        "subsubsections": [
+          {
+            "name": "§1. Postanowienia Ogólne",
+            "rules": [
+              "Użytkownicy zobowiązani są do przestrzegania Regulaminu.",
+              "Administracja zastrzega sobie prawo do zmiany Regulaminu w dowolnym czasie.",
+              "Użytkownicy zobowiązani są do stosowania się do poleceń Administracji.",
+              "W przypadku naruszenia Regulaminu, Administracja zastrzega sobie prawo do wymierzenia odpowiedniej kary.",
+              "Użytkownicy są zobowiązani do przestrzegania zasad netykiety oraz do kulturalnego zachowania na serwerze.",
+              "Administracja ma prawo do usuwania treści i użytkowników naruszających Regulamin bez wcześniejszego ostrzeżenia.",
+              "Administracja zastrzega sobie prawo do usuwania lub modyfikacji wszelkich treści, które uzna za nieodpowiednie.",
+              "Wszelkie kwestie nieuregulowane w Regulaminie będą rozstrzygane przez Administrację."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "II. ZACHOWANIE NA SERWERZE",
+        "subsubsections": [
+          {
+            "name": "§1. Zabronione Zachowania",
+            "rules": [
+              "Zabronione jest zachowanie o charakterze obraźliwym, dyskryminacyjnym, rasistowskim, seksistowskim, homofobicznym czy wulgarnym.",
+              "Prowadzenie działań naruszających prawo, w tym udostępnianie nielegalnych treści oraz plików z wirusami.",
+              "Rozpowszechnianie prywatnych danych innych użytkowników oraz naruszanie ich prywatności.",
+              "Obrażanie, nękanie innych użytkowników lub udostępnianie ich wrażliwych danych.",
+              "Rozpowszechnianie treści drastycznych, nazistowskich lub erotycznych.",
+              "Podszywanie się pod inne osoby.",
+              "Reklamowanie serwerów, usług czy produktów bez zgody Administracji.",
+              "Naruszanie bezpieczeństwa innych użytkowników.",
+              "Prowadzenie działań, które budzą powszechną kontrowersję, w tym prowokacja."
+            ]
+          },
+          {
+            "name": "§2. Zasady Kulturalnego Zachowania",
+            "rules": [
+              "Użytkownicy są zobowiązani do kulturalnego zachowania na serwerze.",
+              "Użytkownicy zobowiązani są do szanowania innych oraz unikania konfliktów.",
+              "Wszelkie spory należy rozwiązywać w sposób cywilizowany, najlepiej w prywatnych rozmowach lub przy wsparciu Administracji."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "III. POSTANOWIENIA KOŃCOWE",
+        "subsubsections": [
+          {
+            "name": "§1. Obowiązywanie Regulaminu",
+            "rules": [
+              "Regulamin wchodzi w życie z chwilą opublikowania na serwerze.",
+              "Niniejszy Regulamin ma charakter oficjalny i wiążący dla wszystkich użytkowników serwera.",
+              "Regulamin Ogólny obowiązuje w przestrzeni działalności Serwera GlobMC, w tym m.in. serwer Minecraft oraz Discord."
+            ]
+          },
+          {
+            "name": "§2. Uprawnienia Administracji",
+            "rules": [
+              "Administracja ma prawo do wymierzenia optymalnej kary w sposób subiektywny, dostosowany do okoliczności.",
+              "Administracja zastrzega sobie prawo do usuwania lub modyfikacji treści oraz do usuwania użytkowników naruszających regulamin."
+            ]
+          },
+          {
+            "name": "§3. Przepisy Prawne",
+            "rules": [
+              "Niniejszy Regulamin podlega prawu polskiemu.",
+              "Użytkownicy są zobowiązani do przestrzegania obowiązujących przepisów prawa."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REGULAMIN SERWERA DISCORD GLOBMC",
+    "subsections": [
+      {
+        "name": "I. ZASADY OGÓLNE",
+        "subsubsections": [
+          {
+            "name": "§1. Postanowienia Ogólne",
+            "rules": [
+              "Na Serwerze Discord znajdują się osoby specjalnie wyznaczone przez Zarząd (\"Administracja\"), posiadające specjalne uprawnienia w celu utrzymania porządku na serwerze oraz moderacji działań użytkowników.",
+              "Administracja Discord ma prawo do egzekwowania kar według zasad regulaminu w sposób subiektywny dla zaistniałych w świecie okoliczności.",
+              "Niniejszy Regulamin to zbiór zasad podlegających serwerowi Discord GlobMC i jest podrzędny Regulaminowi Ogólnemu GlobMC."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "II. ZACHOWANIE NA SERWERZE",
+        "subsubsections": [
+          {
+            "name": "§1. Zabronione Zachowania",
+            "rules": [
+              "Nagrywanie rozmów głosowych, czatów lub prywatnych wiadomości bez wyraźnej zgody wszystkich uczestników.",
+              "Korzystanie z nieodpowiednich, niekulturalnych pseudonimów, które zawierają treści obraźliwe, prowokacyjne lub wulgarne.",
+              "Korzystanie z pseudonimów przypominających pseudonimy Administracji lub innych Użytkowników.",
+              "Instalowanie lub korzystanie z botów bez zgody Administracji.",
+              "Celowe rozprzestrzenianie fałszywych informacji, które mogą wprowadzać w błąd użytkowników."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REGULAMIN SERWERA MINECRAFT GLOBMC",
+    "subsections": [
+      {
+        "name": "I. ZASADY OGÓLNE",
+        "subsubsections": [
+          {
+            "name": "§1. Postanowienia Ogólne",
+            "rules": [
+              "Na serwerze Minecraft znajdują się osoby specjalnie wyznaczone przez Zarząd (\"Administracja\"), które posiadają uprawnienia i przywileje w celu moderacji działań użytkowników oraz egzekwowania kar według regulaminu.",
+              "Administracja Minecraft ma prawo do egzekwowania kar zgodnie z zasadami regulaminu.",
+              "Niniejszy Regulamin to zbiór zasad podlegających serwerowi Minecraft GlobMC i jest podrzędny Regulaminowi Ogólnemu GlobMC."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "II. ZACHOWANIE NA SERWERZE",
+        "subsubsections": [
+          {
+            "name": "§1. Zabronione Zachowania",
+            "rules": [
+              "Celowe i szczególnie zuchwałe niszczenie terenu mapy (tzw. \"grief\").",
+              "Stawianie budowli o treści prowokacyjnej lub nieobyczajnej.",
+              "Używanie modyfikacji wspomagających rozgrywkę.",
+              "Działania obciążające serwer, np. tworzenie ogromnych mechanizmów redstone.",
+              "Wykorzystywanie błędów oprogramowania serwera lub gry Minecraft.",
+              "Niszczenie mechanik serwera, np. ekonomii sklepu.",
+              "Tworzenie pułapek blisko działek graczy (minimalna dozwolona odległość to 50 bloków od najbliższej działki).",
+              "Tworzenie obiektów lub mechanizmów omijających systemy serwerowe, w tym np. system AFK."
+            ]
+          }
+        ]
+      }
+    ]
   }
-
-  
-  
+]
