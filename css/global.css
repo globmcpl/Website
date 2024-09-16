@@ -119,14 +119,18 @@ body {
 }
 
 .navbar .menu-mobile .hamburger {
-  height: 40px;
-  width: 40px;
+  border-radius: 7px;
+  height: 33px;
+  width: 33px;
   background-color: rgba(255, 255, 255, 0.789);
   color: var(--white-color);
   font-size: 20px;
   cursor: pointer;
   transition: 0.5s;
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.172);
 }
 
 .navbar .menu-mobile .hamburger:hover {
