@@ -217,7 +217,7 @@ section:not(#header) .content {
   }
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 400px) {
   .navbar {
     flex-direction: column;
     gap: 30px;
