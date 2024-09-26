@@ -5,19 +5,30 @@
         "prefix": "[GRACZ]",
         "groups": [
             {
-                "name": "Cena",
+                "name": "OKRES",
+                "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "monety": 20
+                    "czas trania": "-"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "monety": "-"
                 }
 
             },
             {
                 "name": "Zestawy",
+                "text-color": "black",
                 "color": "red",
                 "attributes": {
-                    "Start": false,
-                    "Jedzenie": false,
+                    "Start": true,
+                    "Jedzenie": true,
                     "Alchemik": false,
                     "Kot": false,
                     "Enchanting": false,
@@ -29,25 +40,32 @@
             },
             {
                 "name": "PERMISJE",
+                "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "--": "jedna duza",
-                    "Liczba aukcji": 4,
+                    "Maks. liczba domów": "1 sethome",
+                    "Maks. liczba działek": "1 duza",
+                    "Liczba aukcji": "4 aukacje",
                     "Reset dziennych(raz dziennie)": false,
                     "Specjalna ranga na Discordzie": false,
                     "Pisanie na kolorowo": false,
                     "Pisanie innymi formatami": false,
-                    "Kolory nicku": false,
-                    "Maskotki": false,
+                    "Kolory nicku": 0,
+                    "Maskotki": 0,
+                    "Glowing": 0,
+                    "Cząsteczki": 0,
+                    "Nakrycia": 0,
+                    "Ukrycie bloku dzialki": false,
                     "Dedykowany kanal z adm": false,
                     "Komunikat AFK": false,
                     "Własny komunikat działki": false,
                     "Dostęp do Strefy VIP": false,
-                    "Teleportacja": false
+                    "Teleportacja": "5 sek."
                 }
             },
             {
                 "name": "KOMENDY",
+                "text-color": "black",
                 "color": "yellow",
                 "attributes": {
                     "/plot": true,
@@ -66,6 +84,406 @@
                     "/tpaccept": true,
                     "/tpdeny": true,
                     "/kosz": true,
+                    "/hat": false,
+                    "/workbench": false,
+                    "/repair": false,
+                    "/feed": false,
+                    "/enderchest": false,
+                    "/anvil": false,
+                    "/tpahere": false,
+                    "/msgtoggle": false,
+                    "/podpis": false,
+                    "/grindstone": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "VIP",
+        "color": "yellow",
+        "prefix": "[VIP]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "czas trania": "na edycje"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "monety": "19 moment"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": false,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": false,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Maks. liczba domów": "2 sethome",
+                    "Maks. liczba działek": "1 duza + 1 mala",
+                    "Liczba aukcji": "8 aukacje",
+                    "Reset dziennych(raz dziennie)": true,
+                    "Specjalna ranga na Discordzie": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": 0,
+                    "Maskotki": 0,
+                    "Glowing": 0,
+                    "Cząsteczki": 1,
+                    "Nakrycia": 0,
+                    "Ukrycie bloku dzialki": true,
+                    "Dedykowany kanal z adm": false,
+                    "Komunikat AFK": false,
+                    "Własny komunikat działki": false,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "5 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/sethome": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "5 godz.",
+                    "/feed": "2 godz.",
+                    "/enderchest": false,
+                    "/anvil": false,
+                    "/tpahere": false,
+                    "/msgtoggle": false,
+                    "/podpis": false,
+                    "/grindstone": false
+                }
+            }
+        ]
+    },
+    {
+        "name": "VIP+",
+        "color": "orange",
+        "prefix": "[VIP+]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "czas trania": "na edycje"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "monety": "39 moment"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": true,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": true,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Maks. liczba domów": "3 sethome",
+                    "Maks. liczba działek": "2 duza + 2 male",
+                    "Liczba aukcji": "15 aukacje",
+                    "Reset dziennych(raz dziennie)": true,
+                    "Specjalna ranga na Discordzie": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": 1,
+                    "Maskotki": 0,
+                    "Glowing": 1,
+                    "Cząsteczki": 3,
+                    "Nakrycia": 1,
+                    "Ukrycie bloku dzialki": true,
+                    "Dedykowany kanal z adm": false,
+                    "Komunikat AFK": false,
+                    "Własny komunikat działki": true,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "5 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/sethome": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "4 godz.",
+                    "/feed": "2 godz.",
+                    "/enderchest": false,
+                    "/anvil": false,
+                    "/tpahere": true,
+                    "/msgtoggle": false,
+                    "/podpis": false,
+                    "/grindstone": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "SVIP",
+        "color": "aqua",
+        "prefix": "[SVIP]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "czas trania": "na edycje"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "monety": "79 moment"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": true,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": true,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Maks. liczba domów": "4 sethome",
+                    "Maks. liczba działek": "2 duza + 3 male",
+                    "Liczba aukcji": "30 aukcji",
+                    "Reset dziennych(raz dziennie)": true,
+                    "Specjalna ranga na Discordzie": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": 3,
+                    "Maskotki": 1,
+                    "Glowing": 2,
+                    "Cząsteczki": 5,
+                    "Nakrycia": 2,
+                    "Ukrycie bloku dzialki": true,
+                    "Dedykowany kanal z adm": false,
+                    "Komunikat AFK": true,
+                    "Własny komunikat działki": true,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "4 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/sethome": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "3 godz.",
+                    "/feed": "1 godz.",
+                    "/enderchest": true,
+                    "/anvil": true,
+                    "/tpahere": true,
+                    "/msgtoggle": true,
+                    "/podpis": true,
+                    "/grindstone": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "MVIP",
+        "color": "aqua",
+        "prefix": "[MVIP]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "czas trania": "na miesiac"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "monety": "39 moment"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": true,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": true,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Maks. liczba domów": "4 sethome",
+                    "Maks. liczba działek": "2 duza + 3 male",
+                    "Liczba aukcji": "30 aukcji",
+                    "Reset dziennych(raz dziennie)": true,
+                    "Specjalna ranga na Discordzie": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": "wszystkie",
+                    "Maskotki": "wszystkie",
+                    "Glowing": "wszystkie",
+                    "Cząsteczki": "wszystkie",
+                    "Nakrycia": "wszystkie",
+                    "Ukrycie bloku dzialki": true,
+                    "Dedykowany kanal z adm": true,
+                    "Komunikat AFK": true,
+                    "Własny komunikat działki": true,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "3 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/sethome": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "3 godz.",
+                    "/feed": "1 godz.",
                     "/enderchest": true,
                     "/anvil": true,
                     "/tpahere": true,
