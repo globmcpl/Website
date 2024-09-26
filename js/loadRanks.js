@@ -20,7 +20,7 @@ const createGroups = (tbody, data) => {
   var group_id = 0
 
   data[0].groups.forEach(group => {
-    tbody += `<tr style="background-color: ${group.color}"><th scope="row">${group.name}</th>`;
+    tbody += `<tr style="background-color: ${group.color}"><th scope="row"><b>${group.name}</b></th>`;
 
     const ranks_len = data.length
 

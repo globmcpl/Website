@@ -1,48 +1,78 @@
 [
     {
-        "name": "VIP",
-        "color": "yellow",
-        "prefix": "[VIP]",
+        "name": "GRACZ",
+        "color": "grey",
+        "prefix": "[GRACZ]",
         "groups": [
             {
-                "name": "komendy",
+                "name": "Cena",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "/komenda": false
+                    "monety": 20
                 }
 
             },
             {
-                "name": "komendy2",
-                "color": "#ACAAAA",
-                "attributes": {
-                    "/komenda2": "xd"
-                }
-
-            }
-        ]
-    },
-    
-    {
-        "name": "VIP",
-        "color": "yellow",
-        "prefix": "[VIP]",
-        "groups": [
-            {
-                "name": "komendy",
+                "name": "Zestawy",
                 "color": "red",
                 "attributes": {
-                    "/komenda": "xd"
+                    "Start": false,
+                    "Jedzenie": false,
+                    "Alchemik": false,
+                    "Kot": false,
+                    "Enchanting": false,
+                    "Nether": false,
+                    "Wilk": false,
+                    "Mending": false,
+                    "Silk Touch": false
                 }
-
             },
             {
-                "name": "komendy2",
-                "color": "red",
+                "name": "PERMISJE",
+                "color": "#ACAAAA",
                 "attributes": {
-                    "/komenda2": "xd"
+                    "--": "jedna duza",
+                    "Liczba aukcji": 4,
+                    "Reset dziennych(raz dziennie)": false,
+                    "Specjalna ranga na Discordzie": false,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": false,
+                    "Maskotki": false,
+                    "Dedykowany kanal z adm": false,
+                    "Komunikat AFK": false,
+                    "Własny komunikat działki": false,
+                    "Dostęp do Strefy VIP": false,
+                    "Teleportacja": false
                 }
-
+            },
+            {
+                "name": "KOMENDY",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/sethome": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/enderchest": true,
+                    "/anvil": true,
+                    "/tpahere": true,
+                    "/msgtoggle": true,
+                    "/podpis": true,
+                    "/grindstone": true
+                }
             }
         ]
     }
