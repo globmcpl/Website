@@ -20,19 +20,18 @@ const createGroups = (tbody, data) => {
   var group_id = 0
 
   data[0].groups.forEach(group => {
-    tbody += `<tr><th scope="row">${group.name}</th>`;
+    tbody += `<tr style="background-color: ${group.color}"><th scope="row">${group.name}</th>`;
 
     const ranks_len = data.length
 
     for (let i = 0; i < ranks_len; i++) {
-      tbody += `<td></td>`;;
+      tbody += `<td></td>`;
     }
-    
     tbody += '</tr>';
 
     attributes = group.attributes
     for (attribute in attributes) {
-      tbody = createAttributeRow(data, tbody, attribute, group_id)
+      tbody = createAttributeRow(data, tbody, attribute, group_id, group.color)
     }
     group_id += 1
   })
@@ -40,8 +39,8 @@ const createGroups = (tbody, data) => {
   return tbody
 }
 
-const  createAttributeRow = (data, tbody, attribute, group_id) => {
-  tbody += `<tr><th scope="row">${attribute}</th>`;
+const createAttributeRow = (data, tbody, attribute, group_id, group_color) => {
+  tbody += `<tr style="background-color:${group_color}"><th scope="row">${attribute}</th>`;
   
   data.forEach(rank => { 
     value = rank.groups[group_id].attributes[attribute]
@@ -63,7 +62,4 @@ fetch('config/ranks.json')
 
     createHeaders(data, table);
     createBody(data, table)
-
-    tbody += '</tbody>';
-    table.innerHTML += tbody;
   });

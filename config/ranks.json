@@ -6,7 +6,7 @@
         "groups": [
             {
                 "name": "komendy",
-                "color": "red",
+                "color": "#ACAAAA",
                 "attributes": {
                     "/komenda": false
                 }
@@ -14,7 +14,7 @@
             },
             {
                 "name": "komendy2",
-                "color": "red",
+                "color": "#ACAAAA",
                 "attributes": {
                     "/komenda2": "xd"
                 }
