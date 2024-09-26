@@ -1,101 +1,49 @@
-{
-    "ranks": [
-      {
+[
+    {
         "name": "VIP",
-        "prefix": "[VIP]",
         "color": "yellow",
-        "validity": "Na całą edycje",
-        "price": "19.99zł",
-        "expMultiplier": "x1.2",
-        "goCoinsMultiplier": "x1.2",
-        "extraKeys": 1,
-        "weeklyKeys": 1,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": false,
-        "createClan": false,
-        "incognito": false,
-        "earlyArenaStart": false,
-        "freeBattlePass": false,
-        "messageCooldown": "4 sekundy",
-        "freeLegendaryCosmetics": false,
-        "freeEpicCosmetics": false,
-        "freeRareCosmetics": false,
-        "freeCommonCosmetics": 7
-      },
-      {
-        "name": "VIP+",
-        "prefix": "[VIP+]",
-        "color": "orange",
-        "validity": "Na całą edycje",
-        "price": "39.99zł",
-        "expMultiplier": "x1.4",
-        "goCoinsMultiplier": "x1.4",
-        "extraKeys": 2,
-        "weeklyKeys": 2,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": true,
-        "createClan": false,
-        "incognito": false,
-        "earlyArenaStart": false,
-        "freeBattlePass": false,
-        "messageCooldown": "3 sekundy",
-        "freeLegendaryCosmetics": false,
-        "freeEpicCosmetics": false,
-        "freeRareCosmetics": false,
-        "freeCommonCosmetics": 29
-      },
-      {
-        "name": "MVP",
-        "prefix": "[MVP]",
-        "color": "aqua",
-        "validity": "Na całą edycje",
-        "price": "79.99zł",
-        "expMultiplier": "x1.6",
-        "goCoinsMultiplier": "x1.6",
-        "extraKeys": 3,
-        "weeklyKeys": 3,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": true,
-        "createClan": true,
-        "incognito": false,
-        "earlyArenaStart": false,
-        "freeBattlePass": false,
-        "messageCooldown": "2 sekundy",
-        "freeLegendaryCosmetics": false,
-        "freeEpicCosmetics": false,
-        "freeRareCosmetics": false,
-        "freeCommonCosmetics": 0
-      },
-      {
-        "name": "MVP+",
-        "prefix": "[MVP+]",
-        "color": "lightgreen",
-        "validity": "Na całą edycje",
-        "price": "99.99zł",
-        "expMultiplier": "x1.8",
-        "goCoinsMultiplier": "x1.8",
-        "extraKeys": 4,
-        "weeklyKeys": 4,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": true,
-        "createClan": true,
-        "incognito": true,
-        "earlyArenaStart": true,
-        "freeBattlePass": true,
-        "messageCooldown": "1 sekunda",
-        "freeLegendaryCosmetics": true,
-        "freeEpicCosmetics": true,
-        "freeRareCosmetics": true,
-        "freeCommonCosmetics": 0
-      }
-    ]
-  }
-  
+        "prefix": "[VIP]",
+        "groups": [
+            {
+                "name": "komendy",
+                "color": "red",
+                "attributes": {
+                    "/komenda": false
+                }
+
+            },
+            {
+                "name": "komendy2",
+                "color": "red",
+                "attributes": {
+                    "/komenda2": "xd"
+                }
+
+            }
+        ]
+    },
+    
+    {
+        "name": "VIP",
+        "color": "yellow",
+        "prefix": "[VIP]",
+        "groups": [
+            {
+                "name": "komendy",
+                "color": "red",
+                "attributes": {
+                    "/komenda": "xd"
+                }
+
+            },
+            {
+                "name": "komendy2",
+                "color": "red",
+                "attributes": {
+                    "/komenda2": "xd"
+                }
+
+            }
+        ]
+    }
+]
