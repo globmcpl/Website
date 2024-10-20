@@ -7,7 +7,7 @@
             {
                 "name": "OKRES",
                 "text-color": "black",
-                "color": "#457b9d",
+                "color": "#d1e9f6c9",
                 "attributes": {
                     "czas trania": "-"
                 }
@@ -16,7 +16,7 @@
             {
                 "name": "Cena",
                 "text-color": "black",
-                "color": "#a8dadc",
+                "color": "#d1e9f6c9",
                 "attributes": {
                     "monety": "-"
                 }
@@ -25,7 +25,7 @@
             {
                 "name": "Zestawy",
                 "text-color": "black",
-                "color": "#457b9d",
+                "color": "#f6eacbdc",
                 "attributes": {
                     "Start": true,
                     "Jedzenie": true,
@@ -41,7 +41,7 @@
             {
                 "name": "PERMISJE",
                 "text-color": "black",
-                "color": "#a8dadc",
+                "color": "#f1d3ced1",
                 "attributes": {
                     "Maks. liczba domów": "1 sethome",
                     "Maks. liczba działek": "1 duza",
@@ -66,7 +66,7 @@
             {
                 "name": "KOMENDY",
                 "text-color": "black",
-                "color": "#457b9d",
+                "color": "#eecad5da",
                 "attributes": {
                     "/plot": true,
                     "/pomoc": true,

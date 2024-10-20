@@ -273,6 +273,12 @@ section:not(#header) .content {
 
 #rang-box {
   padding: 100px;
+  color: white; 
+  text-shadow: 
+    -0.2px -0.2px 0 white,  
+    0.2px -0.2px 0 white,  
+    -0.2px 0.2px 0 white,   
+    0.2px 0.2px 0 white;
 }
 
 th[data-mc="mc"] {
@@ -290,11 +296,11 @@ th[data-mc="mc"] {
 }
 
 .fa-check{
-  color: #09d309;
+  color: #049404;
   font-weight: bold;
 }
 .fa-times{
-  color: #d80000;
+  color: #890606;
   font-weight: bold;
 }
 
