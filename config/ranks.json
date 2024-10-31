@@ -7,25 +7,25 @@
             {
                 "name": "OKRES",
                 "text-color": "black",
-                "color": "#d1e9f6c9",
+                "color": "#c1c6f5",
                 "attributes": {
-                    "czas trania": "-"
+                    "Czas trwania": "-"
                 }
 
             },
             {
-                "name": "Cena",
+                "name": "CENA",
                 "text-color": "black",
-                "color": "#d1e9f6c9",
+                "color": "#c1c6f5",
                 "attributes": {
-                    "monety": "-"
+                    "Monety": "-"
                 }
 
             },
             {
-                "name": "Zestawy",
+                "name": "ZESTAWY",
                 "text-color": "black",
-                "color": "#f6eacbdc",
+                "color": "#c6d1f1",
                 "attributes": {
                     "Start": true,
                     "Jedzenie": true,
@@ -41,13 +41,13 @@
             {
                 "name": "PERMISJE",
                 "text-color": "black",
-                "color": "#f1d3ced1",
+                "color": "#c1c6f5",
                 "attributes": {
-                    "Maks. liczba domów": "1 sethome",
-                    "Maks. liczba działek": "1 duza",
-                    "Liczba aukcji": "4 aukacje",
-                    "Reset dziennych(raz dziennie)": false,
-                    "Specjalna ranga na Discordzie": false,
+                    "Liczba domów": "1 ",
+                    "Liczba działek": "1 duza",
+                    "Liczba aukcji": "4 aukcje",
+                    "Reset dziennych": false,
+                    "Specjalna ranga na Discord": false,
                     "Pisanie na kolorowo": false,
                     "Pisanie innymi formatami": false,
                     "Kolory nicku": 0,
@@ -55,8 +55,8 @@
                     "Glowing": 0,
                     "Cząsteczki": 0,
                     "Nakrycia": 0,
-                    "Ukrycie bloku dzialki": false,
-                    "Dedykowany kanal z adm": false,
+                    "Ukrycie bloku działki": false,
+                    "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": false,
                     "Własny komunikat działki": false,
                     "Dostęp do Strefy VIP": false,
@@ -66,14 +66,14 @@
             {
                 "name": "KOMENDY",
                 "text-color": "black",
-                "color": "#eecad5da",
+                "color": "#c6d1f1",
                 "attributes": {
                     "/plot": true,
                     "/pomoc": true,
                     "/dzienne": true,
                     "/ignore": true,
                     "/tpa": true,
-                    "/sethome": true,
+                    "/domy": true,
                     "/home": true,
                     "/delhome": true,
                     "/helpop": true,
@@ -108,7 +108,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "czas trania": "na edycje"
+                    "Czas trwania": "<b>na całą edycje<b/>"
                 }
 
             },
@@ -117,7 +117,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "monety": "19 moment"
+                    "Monety": "<b>19 monet<b/>"
                 }
 
             },
@@ -142,11 +142,11 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Maks. liczba domów": "2 sethome",
-                    "Maks. liczba działek": "1 duza + 1 mala",
-                    "Liczba aukcji": "8 aukacje",
-                    "Reset dziennych(raz dziennie)": true,
-                    "Specjalna ranga na Discordzie": true,
+                    "Liczba domów": "2 domy",
+                    "Liczba działek": "1 działka",
+                    "Liczba aukcji": "8 aukcje",
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": false,
                     "Pisanie innymi formatami": false,
                     "Kolory nicku": 0,
@@ -154,8 +154,8 @@
                     "Glowing": 0,
                     "Cząsteczki": 1,
                     "Nakrycia": 0,
-                    "Ukrycie bloku dzialki": true,
-                    "Dedykowany kanal z adm": false,
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": false,
                     "Własny komunikat działki": false,
                     "Dostęp do Strefy VIP": true,
@@ -172,7 +172,7 @@
                     "/dzienne": true,
                     "/ignore": true,
                     "/tpa": true,
-                    "/sethome": true,
+                    "/domy": true,
                     "/home": true,
                     "/delhome": true,
                     "/helpop": true,
@@ -207,7 +207,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "czas trania": "na edycje"
+                    "Czas trwania": "<b>na całą edycje<b/>"
                 }
 
             },
@@ -216,7 +216,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "monety": "39 moment"
+                    "Monety": "<b>39 monet<b/>"
                 }
 
             },
@@ -241,11 +241,11 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Maks. liczba domów": "3 sethome",
-                    "Maks. liczba działek": "2 duza + 2 male",
-                    "Liczba aukcji": "15 aukacje",
-                    "Reset dziennych(raz dziennie)": true,
-                    "Specjalna ranga na Discordzie": true,
+                    "Liczba domów": "3 domy",
+                    "Liczba działek": "2 działki",
+                    "Liczba aukcji": "15 aukcje",
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": false,
                     "Pisanie innymi formatami": false,
                     "Kolory nicku": 1,
@@ -253,8 +253,8 @@
                     "Glowing": 1,
                     "Cząsteczki": 3,
                     "Nakrycia": 1,
-                    "Ukrycie bloku dzialki": true,
-                    "Dedykowany kanal z adm": false,
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": false,
                     "Własny komunikat działki": true,
                     "Dostęp do Strefy VIP": true,
@@ -271,7 +271,7 @@
                     "/dzienne": true,
                     "/ignore": true,
                     "/tpa": true,
-                    "/sethome": true,
+                    "/domy": true,
                     "/home": true,
                     "/delhome": true,
                     "/helpop": true,
@@ -306,7 +306,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "czas trania": "na edycje"
+                    "Czas trwania": "<b>na całą edycje<b/>"
                 }
 
             },
@@ -315,7 +315,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "monety": "79 moment"
+                    "Monety": "<b>79 monet<b/>"
                 }
 
             },
@@ -340,11 +340,11 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Maks. liczba domów": "4 sethome",
-                    "Maks. liczba działek": "2 duza + 3 male",
+                    "Liczba domów": "4 domy",
+                    "Liczba działek": "2 działki",
                     "Liczba aukcji": "30 aukcji",
-                    "Reset dziennych(raz dziennie)": true,
-                    "Specjalna ranga na Discordzie": true,
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": false,
                     "Pisanie innymi formatami": false,
                     "Kolory nicku": 3,
@@ -352,8 +352,8 @@
                     "Glowing": 2,
                     "Cząsteczki": 5,
                     "Nakrycia": 2,
-                    "Ukrycie bloku dzialki": true,
-                    "Dedykowany kanal z adm": false,
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": true,
                     "Własny komunikat działki": true,
                     "Dostęp do Strefy VIP": true,
@@ -370,7 +370,7 @@
                     "/dzienne": true,
                     "/ignore": true,
                     "/tpa": true,
-                    "/sethome": true,
+                    "/domy": true,
                     "/home": true,
                     "/delhome": true,
                     "/helpop": true,
@@ -405,7 +405,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "czas trania": "na miesiac"
+                    "Czas trwania": "<b>na miesiąc<b/>"
                 }
 
             },
@@ -414,7 +414,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "monety": "39 moment"
+                    "Monety": "<b>39 monet<b/>"
                 }
 
             },
@@ -439,11 +439,11 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Maks. liczba domów": "4 sethome",
-                    "Maks. liczba działek": "2 duza + 3 male",
+                    "Liczba domów": "4 domy",
+                    "Liczba działek": "2 działki",
                     "Liczba aukcji": "30 aukcji",
-                    "Reset dziennych(raz dziennie)": true,
-                    "Specjalna ranga na Discordzie": true,
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": false,
                     "Pisanie innymi formatami": false,
                     "Kolory nicku": "wszystkie",
@@ -451,8 +451,8 @@
                     "Glowing": "wszystkie",
                     "Cząsteczki": "wszystkie",
                     "Nakrycia": "wszystkie",
-                    "Ukrycie bloku dzialki": true,
-                    "Dedykowany kanal z adm": true,
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": true,
                     "Komunikat AFK": true,
                     "Własny komunikat działki": true,
                     "Dostęp do Strefy VIP": true,
@@ -469,7 +469,7 @@
                     "/dzienne": true,
                     "/ignore": true,
                     "/tpa": true,
-                    "/sethome": true,
+                    "/domy": true,
                     "/home": true,
                     "/delhome": true,
                     "/helpop": true,
