@@ -1,101 +1,497 @@
-{
-    "ranks": [
-      {
+[
+    {
+        "name": "GRACZ",
+        "color": "grey",
+        "prefix": "[GRACZ]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#c1c6f5",
+                "attributes": {
+                    "Czas trwania": "-"
+                }
+
+            },
+            {
+                "name": "CENA",
+                "text-color": "black",
+                "color": "#c1c6f5",
+                "attributes": {
+                    "Monety": "-"
+                }
+
+            },
+            {
+                "name": "ZESTAWY",
+                "text-color": "black",
+                "color": "#c6d1f1",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": false,
+                    "Kot": false,
+                    "Enchanting": false,
+                    "Nether": false,
+                    "Wilk": false,
+                    "Mending": false,
+                    "Silk Touch": false
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#c1c6f5",
+                "attributes": {
+                    "Liczba domów": "1 ",
+                    "Liczba działek": "1 duza",
+                    "Liczba aukcji": "4 aukcje",
+                    "Reset dziennych": false,
+                    "Specjalna ranga na Discord": false,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": 0,
+                    "Maskotki": 0,
+                    "Glowing": 0,
+                    "Cząsteczki": 0,
+                    "Nakrycia": 0,
+                    "Ukrycie bloku działki": false,
+                    "Dedykowany kanał z administracją": false,
+                    "Komunikat AFK": false,
+                    "Własny komunikat działki": false,
+                    "Dostęp do Strefy VIP": false,
+                    "Teleportacja": "5 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "#c6d1f1",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/domy": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": false,
+                    "/workbench": false,
+                    "/repair": false,
+                    "/feed": false,
+                    "/enderchest": false,
+                    "/anvil": false,
+                    "/tpahere": false,
+                    "/msgtoggle": false,
+                    "/podpis": false,
+                    "/grindstone": false
+                }
+            }
+        ]
+    },
+    {
         "name": "VIP",
-        "prefix": "[VIP]",
         "color": "yellow",
-        "validity": "Na całą edycje",
-        "price": "19.99zł",
-        "expMultiplier": "x1.2",
-        "goCoinsMultiplier": "x1.2",
-        "extraKeys": 1,
-        "weeklyKeys": 1,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": false,
-        "createClan": false,
-        "incognito": false,
-        "earlyArenaStart": false,
-        "freeBattlePass": false,
-        "messageCooldown": "4 sekundy",
-        "freeLegendaryCosmetics": false,
-        "freeEpicCosmetics": false,
-        "freeRareCosmetics": false,
-        "freeCommonCosmetics": 7
-      },
-      {
+        "prefix": "[VIP]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Czas trwania": "<b>na całą edycje<b/>"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Monety": "<b>19 monet<b/>"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": false,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": false,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Liczba domów": "2 domy",
+                    "Liczba działek": "1 działka",
+                    "Liczba aukcji": "8 aukcje",
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": 0,
+                    "Maskotki": 0,
+                    "Glowing": 0,
+                    "Cząsteczki": 1,
+                    "Nakrycia": 0,
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": false,
+                    "Komunikat AFK": false,
+                    "Własny komunikat działki": false,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "5 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/domy": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "5 godz.",
+                    "/feed": "2 godz.",
+                    "/enderchest": false,
+                    "/anvil": false,
+                    "/tpahere": false,
+                    "/msgtoggle": false,
+                    "/podpis": false,
+                    "/grindstone": false
+                }
+            }
+        ]
+    },
+    {
         "name": "VIP+",
-        "prefix": "[VIP+]",
         "color": "orange",
-        "validity": "Na całą edycje",
-        "price": "39.99zł",
-        "expMultiplier": "x1.4",
-        "goCoinsMultiplier": "x1.4",
-        "extraKeys": 2,
-        "weeklyKeys": 2,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": true,
-        "createClan": false,
-        "incognito": false,
-        "earlyArenaStart": false,
-        "freeBattlePass": false,
-        "messageCooldown": "3 sekundy",
-        "freeLegendaryCosmetics": false,
-        "freeEpicCosmetics": false,
-        "freeRareCosmetics": false,
-        "freeCommonCosmetics": 29
-      },
-      {
-        "name": "MVP",
-        "prefix": "[MVP]",
+        "prefix": "[VIP+]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Czas trwania": "<b>na całą edycje<b/>"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Monety": "<b>39 monet<b/>"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": true,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": true,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Liczba domów": "3 domy",
+                    "Liczba działek": "2 działki",
+                    "Liczba aukcji": "15 aukcje",
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": 1,
+                    "Maskotki": 0,
+                    "Glowing": 1,
+                    "Cząsteczki": 3,
+                    "Nakrycia": 1,
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": false,
+                    "Komunikat AFK": false,
+                    "Własny komunikat działki": true,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "5 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/domy": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "4 godz.",
+                    "/feed": "2 godz.",
+                    "/enderchest": false,
+                    "/anvil": false,
+                    "/tpahere": true,
+                    "/msgtoggle": false,
+                    "/podpis": false,
+                    "/grindstone": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "SVIP",
         "color": "aqua",
-        "validity": "Na całą edycje",
-        "price": "79.99zł",
-        "expMultiplier": "x1.6",
-        "goCoinsMultiplier": "x1.6",
-        "extraKeys": 3,
-        "weeklyKeys": 3,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": true,
-        "createClan": true,
-        "incognito": false,
-        "earlyArenaStart": false,
-        "freeBattlePass": false,
-        "messageCooldown": "2 sekundy",
-        "freeLegendaryCosmetics": false,
-        "freeEpicCosmetics": false,
-        "freeRareCosmetics": false,
-        "freeCommonCosmetics": 0
-      },
-      {
-        "name": "MVP+",
-        "prefix": "[MVP+]",
-        "color": "lightgreen",
-        "validity": "Na całą edycje",
-        "price": "99.99zł",
-        "expMultiplier": "x1.8",
-        "goCoinsMultiplier": "x1.8",
-        "extraKeys": 4,
-        "weeklyKeys": 4,
-        "slotReservation": true,
-        "visibility": true,
-        "welcomeMessage": true,
-        "lobbyFly": true,
-        "createClan": true,
-        "incognito": true,
-        "earlyArenaStart": true,
-        "freeBattlePass": true,
-        "messageCooldown": "1 sekunda",
-        "freeLegendaryCosmetics": true,
-        "freeEpicCosmetics": true,
-        "freeRareCosmetics": true,
-        "freeCommonCosmetics": 0
-      }
-    ]
-  }
-  
+        "prefix": "[SVIP]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Czas trwania": "<b>na całą edycje<b/>"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Monety": "<b>79 monet<b/>"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": true,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": true,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Liczba domów": "4 domy",
+                    "Liczba działek": "2 działki",
+                    "Liczba aukcji": "30 aukcji",
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": 3,
+                    "Maskotki": 1,
+                    "Glowing": 2,
+                    "Cząsteczki": 5,
+                    "Nakrycia": 2,
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": false,
+                    "Komunikat AFK": true,
+                    "Własny komunikat działki": true,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "4 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/domy": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "3 godz.",
+                    "/feed": "1 godz.",
+                    "/enderchest": true,
+                    "/anvil": true,
+                    "/tpahere": true,
+                    "/msgtoggle": true,
+                    "/podpis": true,
+                    "/grindstone": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "MVIP",
+        "color": "aqua",
+        "prefix": "[MVIP]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Czas trwania": "<b>na miesiąc<b/>"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Monety": "<b>39 monet<b/>"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": true,
+                    "Enchanting": true,
+                    "Nether": true,
+                    "Wilk": true,
+                    "Mending": true,
+                    "Silk Touch": true
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Liczba domów": "4 domy",
+                    "Liczba działek": "2 działki",
+                    "Liczba aukcji": "30 aukcji",
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
+                    "Pisanie na kolorowo": false,
+                    "Pisanie innymi formatami": false,
+                    "Kolory nicku": "wszystkie",
+                    "Maskotki": "wszystkie",
+                    "Glowing": "wszystkie",
+                    "Cząsteczki": "wszystkie",
+                    "Nakrycia": "wszystkie",
+                    "Ukrycie bloku działki": true,
+                    "Dedykowany kanał z administracją": true,
+                    "Komunikat AFK": true,
+                    "Własny komunikat działki": true,
+                    "Dostęp do Strefy VIP": true,
+                    "Teleportacja": "3 sek."
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/plot": true,
+                    "/pomoc": true,
+                    "/dzienne": true,
+                    "/ignore": true,
+                    "/tpa": true,
+                    "/domy": true,
+                    "/home": true,
+                    "/delhome": true,
+                    "/helpop": true,
+                    "/ukryj": true,
+                    "/warp <nazwa>": true,
+                    "/market | /rynek": true,
+                    "/zestawy": true,
+                    "/tpaccept": true,
+                    "/tpdeny": true,
+                    "/kosz": true,
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "3 godz.",
+                    "/feed": "1 godz.",
+                    "/enderchest": true,
+                    "/anvil": true,
+                    "/tpahere": true,
+                    "/msgtoggle": true,
+                    "/podpis": true,
+                    "/grindstone": true
+                }
+            }
+        ]
+    }
+]
