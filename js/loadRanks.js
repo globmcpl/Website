@@ -1,15 +1,11 @@
 const createHeaders = (data, table) => {
-  let thead = '<thead><tr><th scope="col">Prefiks</th>';
+  let thead = '<thead id="prefixes-row"><tr><th scope="col">Prefiks</th>';
   data.forEach(rank => {
     thead += 
     `
     <th scope="col">
-    <p style="display: inline;">
-      [
-      </p>
-        <p style="display: inline; color: ${rank.color};">${rank.name}</p>
-        <p style="display: inline; color: gray;">
-      ]
+      <p style="display: inline; color: ${rank.color};">
+        [ ${rank.name} ]
       </p>
     </th>`;
   })
@@ -32,7 +28,7 @@ const createGroups = (tbody, data) => {
   data[0].groups.forEach(group => {
 
     tbody += `
-    <tr style="background-color: ${group.color}; color:${group["text-color"]} "><th scope="row">
+    <tr class="group-row" style="color:${group["text-color"]} "><th scope="row">
       <b>${group.name}</b>
     </th>
     `;
@@ -54,7 +50,7 @@ const createGroups = (tbody, data) => {
   return tbody
 }
 const createAttributeRow = (data, tbody, attribute, group_id, group) => {
-  tbody += `<tr style="background-color:${group.color}; color:${group["text-color"]}"; ><th scope="row">${attribute}</th>`;
+  tbody += `<tr style="color:${group["text-color"]}"; ><th scope="row">${attribute}</th>`;
   
   data.forEach(rank => { 
     value = rank.groups[group_id].attributes[attribute]

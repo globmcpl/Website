@@ -271,37 +271,9 @@ section:not(#header) .content {
   }
 }
 
-#rang-box {
-  padding: 100px;
-  color: rgb(12, 12, 12); 
-  text-shadow: 
-    -0.2px -0.2px 0 white,  
-    0.2px -0.2px 0 white,  
-    -0.2px 0.2px 0 white,   
-    0.2px 0.2px 0 white;
-}
-
 th[data-mc="mc"] {
   font-weight: normal;
   font-style: normal;
-}
-
-.table {
-  box-shadow: #1f1f1f 0px 0px 2px;
-  font-family: 'Inter';
-  font-size: 15px;
-  background-color: rgba(153, 153, 153, 0.13) !important;
-  text-align: center;
-  border-radius: 25px;
-}
-
-.fa-check{
-  color: #075f07;
-  font-weight: bold;
-}
-.fa-times{
-  color: #800606;
-  font-weight: bold;
 }
 
 .rules {
