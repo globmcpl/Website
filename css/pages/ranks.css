@@ -1,0 +1,42 @@
+#rang-box {
+    padding: 100px;
+    color: rgb(12, 12, 12); 
+  }
+  
+  th[data-mc="mc"] {
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  #ranks-table {
+    width: 70%;
+    margin: auto; 
+    box-shadow: #1f1f1f 0px 0px 2px;
+    font-family: 'Inter';
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.718);
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  #ranks-table tr {
+    border-color: rgba(0, 0, 0, 0.152);
+  }
+  
+  #prefixes-row {
+    background-color: #212529ed;
+    font-size: 22px;
+  }
+  
+  .group-row {
+    background-color: #0000000c;
+  }
+  
+  .fa-check{
+    color: #075f07;
+    font-weight: bold;
+  }
+  .fa-times{
+    color: #800606;
+    font-weight: bold;
+  }
