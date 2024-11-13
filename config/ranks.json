@@ -43,8 +43,8 @@
                 "text-color": "black",
                 "color": "#c1c6f5",
                 "attributes": {
-                    "Liczba domów": "1 ",
-                    "Liczba działek": "1 duza",
+                    "Liczba domów": "1 dom",
+                    "Liczba działek": "1 działka",
                     "Liczba aukcji": "4 aukcje",
                     "Reset dziennych": false,
                     "Specjalna ranga na Discord": false,

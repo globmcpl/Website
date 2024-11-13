@@ -4,8 +4,8 @@ const createHeaders = (data, table) => {
     thead += 
     `
     <th scope="col">
-      <p style="display: inline; color: ${rank.color};">
-        [ ${rank.name} ]
+      <p class="header-row" style="color: ${rank.color};">
+        [${rank.name}]
       </p>
     </th>`;
   })
