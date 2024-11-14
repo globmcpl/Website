@@ -1,10 +1,16 @@
 const createHeaders = (data, table) => {
   let thead = '<thead id="prefixes-row"><tr><th scope="col">Prefiks</th>';
   data.forEach(rank => {
+    console.log(rank.gradient)
     thead += 
     `
     <th scope="col">
-      <p class="header-row" style="color: ${rank.color};">
+      <p 
+      class="header-row" style="
+      background: linear-gradient${rank.gradient}; 
+      color: transparent; 
+      background-clip: text;
+      ">
         [${rank.name}]
       </p>
     </th>`;
@@ -28,7 +34,7 @@ const createGroups = (tbody, data) => {
   data[0].groups.forEach(group => {
 
     tbody += `
-    <tr class="group-row" style="color:${group["text-color"]} "><th scope="row">
+    <tr class="group-row" style="color:${group["text-color"]}"><th scope="row">
       <b>${group.name}</b>
     </th>
     `;
@@ -49,6 +55,7 @@ const createGroups = (tbody, data) => {
 
   return tbody
 }
+
 const createAttributeRow = (data, tbody, attribute, group_id, group) => {
   tbody += `<tr style="color:${group["text-color"]}"; ><th scope="row">${attribute}</th>`;
   

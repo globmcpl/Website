@@ -2,6 +2,7 @@
     {
         "name": "GRACZ",
         "color": "grey",
+        "gradient": "(grey, grey)",
         "prefix": "[GRACZ]",
         "groups": [
             {
@@ -85,6 +86,7 @@
     {
         "name": "VIP",
         "color": "#5eef14",
+        "gradient": "(90deg, rgba(94,239,20,1) 35%, rgba(57,147,11,1) 100%)",
         "prefix": "[VIP]",
         "groups": [
             {
@@ -168,6 +170,7 @@
     {
         "name": "VIP+",
         "color": "#5eef14",
+        "gradient": "(90deg, rgba(94,239,20,1) 35%, rgba(57,147,11,1) 100%)",
         "prefix": "[VIP+]",
         "groups": [
             {
@@ -251,6 +254,7 @@
     {
         "name": "SVIP",
         "color": "aqua",
+        "gradient": "(90deg, rgba(0,255,255,1) 35%, rgba(0,156,156,1) 100%)",
         "prefix": "[SVIP]",
         "groups": [
             {
@@ -334,6 +338,7 @@
     {
         "name": "MVIP",
         "color": "orange",
+        "gradient": "(90deg, rgba(255,165,0,1) 35%, rgba(167,108,0,1) 100%)",
         "prefix": "[MVIP]",
         "groups": [
             {
