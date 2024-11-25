@@ -72,17 +72,41 @@
   }
 
   @media screen and (max-width: 564px) {
-    .header-row{
+    body{
+      position: relative;
+    }
+
+    .links {
+      width: 200px;
+      position: absolute;
+      top: 10px; 
+      left: 10px; 
+      font-size: 1px;
+    }
+
+    .group-row {
+      font-size: 12px;
+      background-color: #0000000c;
+    }
+
+    #prefixes-row {
       font-size: 15px;
+    }
+    
+    .header-row{
+      font-size: 12px;
     }
 
     #rang-box {
-      padding: 5px;
-      margin: 10px auto auto auto;
+      width: 100%;
+      padding: 1px;
+      margin: None;
     }
 
     #ranks-table {
-      height: 1200px;
+      font-size: 8px;
+      height: 2000px;
       width: 100%;
+      margin: None;
     }
   }
