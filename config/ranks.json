@@ -36,7 +36,8 @@
                     "Nether": false,
                     "Wilk": false,
                     "Mending": false,
-                    "Silk Touch": false
+                    "Silk Touch": false,
+                    "Klucze": false
                 }
             },
             {
@@ -46,7 +47,7 @@
                 "attributes": {
                     "Liczba domów": "1 dom",
                     "Liczba działek": "1 działka",
-                    "Liczba aukcji": "4 aukcje",
+                    "Liczba aukcji": "3 aukcje",
                     "Reset dziennych": false,
                     "Specjalna ranga na Discord": false,
                     "Pisanie na kolorowo": false,
@@ -60,8 +61,7 @@
                     "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": false,
                     "Własny komunikat działki": false,
-                    "Dostęp do Strefy VIP": false,
-                    "Teleportacja": "5 sek."
+                    "Dostęp do Strefy VIP": false
                 }
             },
             {
@@ -120,7 +120,8 @@
                     "Nether": true,
                     "Wilk": false,
                     "Mending": true,
-                    "Silk Touch": true
+                    "Silk Touch": true,
+                    "Klucze": false
                 }
             },
             {
@@ -130,7 +131,7 @@
                 "attributes": {
                     "Liczba domów": "2 domy",
                     "Liczba działek": "1 działka",
-                    "Liczba aukcji": "8 aukcje",
+                    "Liczba aukcji": "5 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": false,
@@ -144,8 +145,7 @@
                     "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": false,
                     "Własny komunikat działki": false,
-                    "Dostęp do Strefy VIP": true,
-                    "Teleportacja": "5 sek."
+                    "Dostęp do Strefy VIP": true
                 }
             },
             {
@@ -204,7 +204,8 @@
                     "Nether": true,
                     "Wilk": true,
                     "Mending": true,
-                    "Silk Touch": true
+                    "Silk Touch": true,
+                    "Klucze": false
                 }
             },
             {
@@ -214,7 +215,7 @@
                 "attributes": {
                     "Liczba domów": "3 domy",
                     "Liczba działek": "2 działki",
-                    "Liczba aukcji": "15 aukcje",
+                    "Liczba aukcji": "8 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": true,
@@ -228,8 +229,7 @@
                     "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": false,
                     "Własny komunikat działki": true,
-                    "Dostęp do Strefy VIP": true,
-                    "Teleportacja": "5 sek."
+                    "Dostęp do Strefy VIP": true
                 }
             },
             {
@@ -288,7 +288,8 @@
                     "Nether": true,
                     "Wilk": true,
                     "Mending": true,
-                    "Silk Touch": true
+                    "Silk Touch": true,
+                    "Klucze": true
                 }
             },
             {
@@ -298,7 +299,7 @@
                 "attributes": {
                     "Liczba domów": "4 domy",
                     "Liczba działek": "2 działki",
-                    "Liczba aukcji": "30 aukcji",
+                    "Liczba aukcji": "12 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": true,
@@ -312,8 +313,7 @@
                     "Dedykowany kanał z administracją": false,
                     "Komunikat AFK": true,
                     "Własny komunikat działki": true,
-                    "Dostęp do Strefy VIP": true,
-                    "Teleportacja": "4 sek."
+                    "Dostęp do Strefy VIP": true
                 }
             },
             {
@@ -372,7 +372,8 @@
                     "Nether": true,
                     "Wilk": true,
                     "Mending": true,
-                    "Silk Touch": true
+                    "Silk Touch": true,
+                    "Klucze": true
                 }
             },
             {
@@ -382,22 +383,21 @@
                 "attributes": {
                     "Liczba domów": "4 domy",
                     "Liczba działek": "2 działki",
-                    "Liczba aukcji": "30 aukcji",
+                    "Liczba aukcji": "15 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": true,
                     "Pisanie innymi formatami": true,
                     "Kolory nicku": "wszystkie",
-                    "Maskotki": "wszystkie",
-                    "Glowing": "wszystkie",
-                    "Cząsteczki": "wszystkie",
-                    "Nakrycia": "wszystkie",
+                    "Maskotki": 5,
+                    "Glowing": 4,
+                    "Cząsteczki": 8,
+                    "Nakrycia": 4,
                     "Ukrycie bloku działki": true,
                     "Dedykowany kanał z administracją": true,
                     "Komunikat AFK": true,
                     "Własny komunikat działki": true,
-                    "Dostęp do Strefy VIP": true,
-                    "Teleportacja": "3 sek."
+                    "Dostęp do Strefy VIP": true
                 }
             },
             {
