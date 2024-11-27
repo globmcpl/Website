@@ -42,7 +42,7 @@ body {
 }
 
 /*Navbar*/
-.navbar {
+.navbar-global {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -53,18 +53,18 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.navbar a {
+.navbar-global a {
   text-decoration: none;
 }
 
-.navbar .menu-mobile {
+.navbar-global .menu-mobile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar .menu-mobile .logo {
+.navbar-global .menu-mobile .logo {
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -72,25 +72,25 @@ body {
   gap: 10px;
 }
 
-.navbar .menu-mobile .logo img {
+.navbar-global .menu-mobile .logo img {
   max-width: 40px;
   height: auto;
 }
 
-.navbar .menu-mobile .logo h3 {
+.navbar-global .menu-mobile .logo h3 {
   color: var(--white-color);
   font-weight: 900;
   font-size: 20px;
 }
 
-.navbar .links {
+.navbar-global .links {
   display: flex;
   flex-direction: row;
   gap: 30px;
   transition: 0.3s ease-in-out;
 }
 
-.navbar .links .link {
+.navbar-global .links .link {
   color: var(--description-color);
   font-size: 18px;
   font-weight: 600;
@@ -99,11 +99,11 @@ body {
   transition: 0.2s;
 }
 
-.navbar .links .link.active {
+.navbar-global .links .link.active {
   color: var(--white-color);
 }
 
-.navbar .links .link.active::after {
+.navbar-global .links .link.active::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -114,11 +114,11 @@ body {
   background: var(--main-color);
 }
 
-.navbar .links .link:not(.active):hover {
+.navbar-global .links .link:not(.active):hover {
   color: var(--white-color);
 }
 
-.navbar .menu-mobile .hamburger {
+.navbar-global .menu-mobile .hamburger {
   border-radius: 7px;
   height: 33px;
   width: 33px;
@@ -133,15 +133,15 @@ body {
   box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.172);
 }
 
-.navbar .menu-mobile .hamburger:hover {
+.navbar-global .menu-mobile .hamburger:hover {
   opacity: 0.8;
 }
 
-.navbar.active {
+.navbar-global.active {
   max-height: 1000px;
 }
 
-.navbar.active .links {
+.navbar-global.active .links {
   opacity: 1;
   z-index: 2;
 }
@@ -206,33 +206,33 @@ section:not(#header) .content {
 
 /*Responsive*/
 @media screen and (max-width: 1625px) {
-  .navbar {
+  .navbar-global {
     padding: 20px 90px;
   }
 }
 
 @media screen and (max-width: 819px) {
-  .navbar {
+  .navbar-global {
     padding: 20px 30px;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .navbar {
+@media screen and (max-width: 600px) {
+  .navbar-global {
     flex-direction: column;
     gap: 30px;
     max-height: 90px;
   }
 
-  .navbar .menu-mobile {
+  .navbar-global .menu-mobile {
     width: 100%;
   }
 
-  .navbar .menu-mobile .hamburger {
+  .navbar-global .menu-mobile .hamburger {
     display: flex;
   }
 
-  .navbar .links {
+  .navbar-global .links {
     flex-direction: column;
     order: 2;
     width: 100%;
