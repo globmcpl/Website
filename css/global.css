@@ -99,6 +99,21 @@ body {
   transition: 0.2s;
 }
 
+.navbar-global .links .link-wiki {
+  width: 70px;
+  padding-left: 15px;
+  color: var(--description-color);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: 0.2s;
+  margin-left: 30px;
+  border-radius: 8px;
+  border-width: 0.5px;
+  border-style: solid;
+}
+
 .navbar-global .links .link.active {
   color: var(--white-color);
 }
@@ -115,6 +130,21 @@ body {
 }
 
 .navbar-global .links .link:not(.active):hover {
+  color: var(--white-color);
+}
+
+.navbar-global .links .link-wiki.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  border-radius: 5px;
+  background: var(--main-color);
+}
+
+.navbar-global .links .link-wiki:not(.active):hover {
   color: var(--white-color);
 }
 
