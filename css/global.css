@@ -199,7 +199,7 @@ body {
 }
 
 /*Other*/
-section:not(#header) .content {
+section:not(#header-default) .content {
   padding: 90px 150px;
   width: 100%;
 }
@@ -239,10 +239,20 @@ section:not(#header) .content {
     opacity: 0;
     z-index: -1;
   }
+
+  /* turning of styles from wiki link */
+  .navbar-global .links a {
+    margin-left: 0px !important;
+    padding-left: 0 !important;
+    padding: 0, 0, 0, 0 !important;
+    border-radius: 0px !important;
+    border-width: 0px !important;
+    border-style: none !important;
+  }
 }
 
 @media screen and (max-width: 1625px) {
-  section:not(#header) .content {
+  section:not(#header-default) .content {
     padding: 90px;
   }
 
@@ -252,7 +262,7 @@ section:not(#header) .content {
 }
 
 @media screen and (max-width: 819px) {
-  section:not(#header) .content {
+  section:not(#header-default) .content {
     padding: 50px 30px;
   }
 

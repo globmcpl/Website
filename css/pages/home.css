@@ -1,7 +1,7 @@
 @import "css/global.css";
 
 /*Header*/
-#header {
+#header-default {
     position: relative;
     background: url("../../images/background.webp") no-repeat fixed center;
     min-width: 100%;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-#header .content {
+#header-default .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     position: relative;
 }
 
-#header .content .left .ip-copied {
+#header-default .content .left .ip-copied {
     color: var(--green-color);
     background: var(--ip-copied-background);
     padding: 10px 20px;
@@ -37,41 +37,41 @@
     display: none;
 }
 
-#header .content .left .ip-copied.active {
+#header-default .content .left .ip-copied.active {
     display: flex;
 }
 
-#header .content .left .ip-copied.error {
+#header-default .content .left .ip-copied.error {
     background: var(--warning-background);
     color: var(--red-color);
 }
 
-#header .content .left {
+#header-default .content .left {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#header .content .left .server-name {
+#header-default .content .left .server-name {
     display: flex;
     flex-direction: column;
 }
 
-#header .content .left .server-name p {
+#header-default .content .left .server-name p {
     color: var(--white-color);
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
 }
 
-#header .content .left .server-name h1 {
+#header-default .content .left .server-name h1 {
     color: var(--main-color);
     text-transform: uppercase;
     font-size: 65px;
     font-weight: 900;
 }
 
-#header .content .left .server-description {
+#header-default .content .left .server-description {
     color: var(--description-color);
     font-size: 18px;
     font-weight: 400;
@@ -79,13 +79,13 @@
     line-height: 1.6;
 }
 
-#header .content .left .buttons {
+#header-default .content .left .buttons {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-#header .content .left .buttons .copy-ip {
+#header-default .content .left .buttons .copy-ip {
     background: var(--copy-ip-button-background);
     border: 2px solid var(--main-color);
     border-radius: 3px;
@@ -97,11 +97,11 @@
     transition: 0.2s;
 }
 
-#header .content .left .buttons .copy-ip:hover {
+#header-default .content .left .buttons .copy-ip:hover {
     opacity: 0.8;
 }
 
-#header .content .left .buttons .how-to-join {
+#header-default .content .left .buttons .how-to-join {
     background: var(--how-to-join-button-background);
     border: 2px solid var(--description-color);
     border-radius: 3px;
@@ -114,11 +114,11 @@
     width: 100%;
 }
 
-#header .content .left .buttons .how-to-join:hover {
+#header-default .content .left .buttons .how-to-join:hover {
     opacity: 0.8;
 }
 
-#header .content .right {
+#header-default .content .right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,13 +126,13 @@
     height: 100%;
 }
 
-#header .content .right .logo-img {
+#header-default .content .right .logo-img {
     max-width: 150px;
     transform: translatey(0px);
     animation: float 4s ease-in-out infinite;
 }
 
-#header .content .right .stats {
+#header-default .content .right .stats {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -141,7 +141,7 @@
     border-radius: 5px;
 }
 
-#header .content .right .stats .stat {
+#header-default .content .right .stats .stat {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -149,14 +149,14 @@
     align-items: center;
 }
 
-#header .content .right .stats .stat .icon {
+#header-default .content .right .stats .stat .icon {
     border-radius: 5px;
     background: var(--stat-icon-background-2);
     padding: 10px;
     transition: .2s ease-in-out;
 }
 
-#header .content .right .stats .stat .icon i {
+#header-default .content .right .stats .stat .icon i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,31 +169,31 @@
     border-radius: 5px;
 }
 
-#header .content .right .stats .stat:hover .icon {
+#header-default .content .right .stats .stat:hover .icon {
     transform: scale(1.1);
 }
 
-#header .content .right .stats .stat .texts {
+#header-default .content .right .stats .stat .texts {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#header .content .right .stats .stat .texts h5 {
+#header-default .content .right .stats .stat .texts h5 {
     color: var(--white-color);
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 700;
 }
 
-#header .content .right .stats .stat .texts p {
+#header-default .content .right .stats .stat .texts p {
     color: var(--description-color);
     font-size: 15px;
     font-weight: 400;
 }
 
-#header .content .right .stats .stat .texts p span {
+#header-default .content .right .stats .stat .texts p span {
     color: var(--green-color);
 }
 
@@ -686,7 +686,7 @@
 /*Responsive*/
 /*Header*/
 @media screen and (max-width: 1625px) {
-    #header .content {
+    #header-default .content {
         padding: 150px 90px;
         align-items: start;
         justify-content: center;
@@ -694,38 +694,38 @@
 }
 
 @media screen and (max-width: 1361px) {
-    #header .content {
+    #header-default .content {
         flex-direction: column;
         padding: 120px 90px;
         height: 100%;
         gap: 60px;
     }
 
-    #header .content .left {
+    #header-default .content .left {
         gap: 30px;
         justify-content: left;
     }
 
-    #header .content .right .stats {
+    #header-default .content .right .stats {
         width: fit-content;
     }
 
-    #header .content .right .logo-img {
+    #header-default .content .right .logo-img {
         display: none;
     }
 
     @media screen and (min-height: 745px) {
-        #header .content {
+        #header-default .content {
             justify-content: center;
         }
 
-        #header .content .left {
+        #header-default .content .left {
             height: fit-content;
             justify-content: center;
             gap: 30px;
         }
 
-        #header .content .right {
+        #header-default .content .right {
             height: fit-content;
             justify-content: center;
             gap: 30px;
@@ -734,53 +734,53 @@
 }
 
 @media screen and (max-width: 819px) {
-    #header .content {
+    #header-default .content {
         padding: 150px 30px;
     }
 
-    #header .content .left .server-name p {
+    #header-default .content .left .server-name p {
         font-size: 15px;
     }
 
-    #header .content .left .server-name h1 {
+    #header-default .content .left .server-name h1 {
         font-size: 40px;
     }
 
-    #header .content .left .server-description {
+    #header-default .content .left .server-description {
         font-size: 16px;
     }
 
-    #header .content .right {
+    #header-default .content .right {
         width: 100%;
     }
 
-    #header .content .right .stats {
+    #header-default .content .right .stats {
         width: 100%;
         justify-content: space-between;
     }
 }
 
 @media screen and (max-width: 621px) {
-    #header .content .right .stats {
+    #header-default .content .right .stats {
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
     }
 
-    #header .content .right .stats .stat:hover .icon {
+    #header-default .content .right .stats .stat:hover .icon {
         transform: scale(1);
     }
 }
 
 @media screen and (max-width: 447px) {
-    #header .content .left .server-name h1 {
+    #header-default .content .left .server-name h1 {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 383px) {
-    #header .content .left .buttons {
+    #header-default .content .left .buttons {
         flex-direction: column;
     }
 }
