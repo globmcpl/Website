@@ -1,7 +1,6 @@
 const createHeaders = (data, table) => {
   let thead = '<thead id="prefixes-row"><tr><th scope="col">Prefiks</th>';
   data.forEach(rank => {
-    console.log(rank.gradient)
     thead += 
     `
     <th scope="col">
