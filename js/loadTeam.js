@@ -73,9 +73,11 @@ executeLoad = async () => {
     fetch('config/admin_team.json').then(response => {
         return response.json();
     }).then(data => {
-        const teamContent = data.adminTeam
-        for (let team in teamContent) {
-            updateTeam(teamContent[team], team);
+        for (teamKey in data){
+            const teamContent = data[teamKey]
+            for (let team in teamContent) {
+                updateTeam(teamContent[team], team);
+            }
         }
     })     
 }

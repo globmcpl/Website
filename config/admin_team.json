@@ -20,5 +20,21 @@
                 "rankColor": "rgba(255, 3, 3, 1)"
             }   
         ]
+    },
+    "helpersTeam": {
+        "Helperzy": [
+            {
+                "inGameName": "kacperko",
+                "rank": "Helper",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(255, 3, 3, 1)"
+            },
+            {
+                "inGameName": "xSesamix",
+                "rank": "Helper",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(255, 3, 3, 1)"
+            }
+        ]
     }
 }
