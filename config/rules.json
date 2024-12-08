@@ -120,7 +120,8 @@
             "rules": [
               "Na serwerze Minecraft znajdują się osoby specjalnie wyznaczone przez Zarząd (\"Administracja\"), które posiadają uprawnienia i przywileje w celu moderacji działań użytkowników oraz egzekwowania kar według regulaminu.",
               "Administracja Minecraft ma prawo do egzekwowania kar zgodnie z zasadami regulaminu.",
-              "Niniejszy Regulamin to zbiór zasad podlegających serwerowi Minecraft GlobMC i jest podrzędny Regulaminowi Ogólnemu GlobMC."
+              "Niniejszy Regulamin to zbiór zasad podlegających serwerowi Minecraft GlobMC i jest podrzędny Regulaminowi Ogólnemu GlobMC.",
+              "Zakazuje się tworzenia multikont."
             ]
           }
         ]
@@ -138,7 +139,7 @@
               "Wykorzystywanie błędów oprogramowania serwera lub gry Minecraft.",
               "Niszczenie mechanik serwera, np. ekonomii sklepu.",
               "Tworzenie pułapek blisko działek graczy (minimalna dozwolona odległość to 50 bloków od najbliższej działki).",
-              "Tworzenie obiektów lub mechanizmów omijających systemy serwerowe, w tym np. system AFK."
+              "Tworzenie obiektów lub mechanizmów omijających systemy serwerowe wykorzystujących błędy serwera lub gry Minecraft, niszczących ekonomię serwera (w tym np. 'jednotickowe farmy' czy systemy omijające AFK)."
             ]
           }
         ]
