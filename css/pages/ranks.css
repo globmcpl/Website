@@ -20,17 +20,17 @@
 #rang-box {
     font-family: 'Trebuchet MS', sans-serif;
     padding: 100px;
-    color: rgb(12, 12, 12); 
+    color: rgb(12, 12, 12);
   }
-  
+
   th[data-mc="mc"] {
     font-weight: normal;
     font-style: normal;
   }
-  
+
   #ranks-table {
     width: 70%;
-    margin: auto; 
+    margin: auto;
     box-shadow: #1f1f1f 0px 0px 2px;
     font-size: 17px;
     background-color: rgba(255, 255, 255, 0.718);
@@ -43,24 +43,28 @@
   }
 
   #ranks-table th {
-    text-align: center; 
+    text-align: center;
     vertical-align: middle;
   }
-  
+
   .header-row{
     display: inline;
+  }
+
+  .rank-required{
+    font-size: 13px;
   }
 
   #prefixes-row {
     background-color: #212529ed;
     font-size: 22px;
   }
-  
+
   .group-row {
     font-size: 20px;
     background-color: #0000000c;
   }
-  
+
   .fa-check{
     color: #075f07;
     font-weight: bold;
@@ -117,7 +121,7 @@
     #prefixes-row {
       font-size: 15px;
     }
-    
+
     .header-row{
       font-size: 12px;
     }

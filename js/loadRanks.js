@@ -1,16 +1,39 @@
 const createHeaders = (data, table) => {
   let thead = '<thead id="prefixes-row"><tr><th scope="col">Prefiks</th>';
   data.forEach(rank => {
-    thead += 
+
+    let rankRequired =
+    `
+      <br>
+        <p
+        class="rank-required"
+        style="visibility: hidden"
+        >
+          invisible text
+        </p>
+    `
+
+    if (rank.name === 'MVIP'){
+      rankRequired =
+      `
+        <br>
+          <p class="rank-required">
+            Wymaga rangi SVIP
+        </p>
+      `
+    }
+
+    thead +=
     `
     <th scope="col">
-      <p 
+      <p
       class="header-row" style="
-      background: linear-gradient${rank.gradient}; 
-      color: transparent; 
+      background: linear-gradient${rank.gradient};
+      color: transparent;
       background-clip: text;
       ">
         [${rank.name}]
+        ${rankRequired}
       </p>
     </th>`;
   })
@@ -20,7 +43,7 @@ const createHeaders = (data, table) => {
 
 const createBody = (data, table) => {
   let tbody = '<tbody>';
-  
+
   tbody = createGroups(tbody, data)
 
   tbody += '</tbody>';
@@ -57,8 +80,8 @@ const createGroups = (tbody, data) => {
 
 const createAttributeRow = (data, tbody, attribute, group_id, group) => {
   tbody += `<tr style="color:${group["text-color"]}"; ><th scope="row">${attribute}</th>`;
-  
-  data.forEach(rank => { 
+
+  data.forEach(rank => {
     value = rank.groups[group_id].attributes[attribute]
 
     if (typeof value === 'boolean') {
