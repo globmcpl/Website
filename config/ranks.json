@@ -75,7 +75,6 @@
                     "/feed": false,
                     "/enderchest": false,
                     "/anvil": false,
-                    "/tpahere": false,
                     "/msgtoggle": false,
                     "/podpis": false,
                     "/grindstone": false
@@ -159,7 +158,6 @@
                     "/feed": "2 godz.",
                     "/enderchest": false,
                     "/anvil": false,
-                    "/tpahere": false,
                     "/msgtoggle": false,
                     "/podpis": false,
                     "/grindstone": false
@@ -243,7 +241,6 @@
                     "/feed": "2 godz.",
                     "/enderchest": false,
                     "/anvil": false,
-                    "/tpahere": true,
                     "/msgtoggle": false,
                     "/podpis": false,
                     "/grindstone": true
@@ -327,7 +324,6 @@
                     "/feed": "1 godz.",
                     "/enderchest": true,
                     "/anvil": true,
-                    "/tpahere": true,
                     "/msgtoggle": true,
                     "/podpis": true,
                     "/grindstone": true
@@ -411,7 +407,6 @@
                     "/feed": "1 godz.",
                     "/enderchest": true,
                     "/anvil": true,
-                    "/tpahere": true,
                     "/msgtoggle": true,
                     "/podpis": true,
                     "/grindstone": true
