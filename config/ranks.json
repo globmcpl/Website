@@ -59,8 +59,6 @@
                     "Nakrycia": 0,
                     "Max limit graczy na działce": 5,
                     "Dedykowany kanał z administracją": false,
-                    "Komunikat AFK": false,
-                    "Własny komunikat działki": false,
                     "Dostęp do Strefy VIP": false
                 }
             },
@@ -142,8 +140,6 @@
                     "Nakrycia": 0,
                     "Max limit graczy na działce": 5,
                     "Dedykowany kanał z administracją": false,
-                    "Komunikat AFK": false,
-                    "Własny komunikat działki": false,
                     "Dostęp do Strefy VIP": true
                 }
             },
@@ -225,8 +221,6 @@
                     "Nakrycia": 1,
                     "Max limit graczy na działce": 10,
                     "Dedykowany kanał z administracją": false,
-                    "Komunikat AFK": false,
-                    "Własny komunikat działki": true,
                     "Dostęp do Strefy VIP": true
                 }
             },
@@ -308,8 +302,6 @@
                     "Nakrycia": 2,
                     "Max limit graczy na działce": 10,
                     "Dedykowany kanał z administracją": false,
-                    "Komunikat AFK": true,
-                    "Własny komunikat działki": true,
                     "Dostęp do Strefy VIP": true
                 }
             },
@@ -391,8 +383,6 @@
                     "Nakrycia": 4,
                     "Max limit graczy na działce": 10,
                     "Dedykowany kanał z administracją": true,
-                    "Komunikat AFK": true,
-                    "Własny komunikat działki": true,
                     "Dostęp do Strefy VIP": true
                 }
             },
