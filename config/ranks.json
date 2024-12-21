@@ -231,7 +231,7 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "4 godz.",
+                    "/repair": "5 godz.",
                     "/feed": "2 godz.",
                     "/enderchest": false,
                     "/anvil": false,
@@ -312,7 +312,7 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "3 godz.",
+                    "/repair": "5 godz.",
                     "/feed": "1 godz.",
                     "/enderchest": true,
                     "/anvil": true,
@@ -393,7 +393,7 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "3 godz.",
+                    "/repair": "5 godz.",
                     "/feed": "1 godz.",
                     "/enderchest": true,
                     "/anvil": true,
