@@ -3,19 +3,13 @@
         "zarząd": [
             {
                 "inGameName": "Norbit4",
-                "rank": "Admin",
-                "skinUrlOrPathToFile": "",
-                "rankColor": "rgba(255, 3, 3, 1)"
-            },
-            {
-                "inGameName": "Zioomkox",
-                "rank": "Admin",
+                "rank": "CEO",
                 "skinUrlOrPathToFile": "",
                 "rankColor": "rgba(255, 3, 3, 1)"
             },
             {
                 "inGameName": "Smaikuu",
-                "rank": "Admin",
+                "rank": "CEO",
                 "skinUrlOrPathToFile": "",
                 "rankColor": "rgba(255, 3, 3, 1)"
             }   
