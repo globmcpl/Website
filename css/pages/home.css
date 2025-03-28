@@ -214,7 +214,7 @@
 }
 
 #arrow{
-    font-size: 4.5rem;
+    font-size: 3.7rem;
 }
 
 .fa-circle-down {
@@ -223,8 +223,8 @@
 
 .fa-circle-down:hover {
     transition:0.5s;
-    font-size: 5rem;
-    color: #4dc8d8 !important;
+    font-size: 4.1rem;
+    color: #4d95d8 !important;
 }
 
 /*About*/
