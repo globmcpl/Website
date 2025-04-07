@@ -53,6 +53,8 @@ body {
   background: var(--background-color);
   transition: 0.3s ease-in-out;
 }
+
+
 .online-count {
   margin-right: 6px;
   font-weight: 600;
@@ -132,6 +134,8 @@ body {
 
 .navbar-global .links .link:not(.active):hover {
   color: var(--white-color);
+  transform: scale(1.05); 
+  transition: transform 0.2s ease-in-out; 
 }
 
 .navbar-global .menu-mobile .hamburger {
@@ -194,7 +198,6 @@ body {
 #footer .social-links .link:hover {
   color: var(--white-color);
 }
-
 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: 5px;
