@@ -9,11 +9,14 @@
     },
     {
         "question": "Czy gra na serwerze wymaga instalacji modyfikacji?",
-        "answer": "Nie, serwer dzięki specjalnym pluginom i datapackom pozwala na grę bez modyfikacji."
+        "answer": "Nie, serwer dzięki specjalnym pluginom."
     },
-
     { 
         "question": "Czy obecnie prowadzona jest rekrutacja do administracji?", 
         "answer": "Aktualne informacje o trwających rekrutacjach można znaleźć na naszym serwerze Discord." 
+    },
+    { 
+        "question": "Jakie tryby są dostępne na serwerze?", 
+        "answer": "Aktualnie na serwerze dostępny jest tylko tryb <b>Survival</b>. W przyszłości planujemy dodać inne tryby." 
     }
 ]
