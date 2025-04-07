@@ -1,55 +1,53 @@
 @import "css/global.css";
 
 /*Header*/
+
 #header-default {
     position: relative;
-    background: url("../../images/background.webp") no-repeat fixed center;
-    min-width: 100%;
+    width: 100%;
     min-height: 800px;
     height: 80vh;
-    background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    z-index: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(27, 27, 27, 0.808); 
+}
+
+#header-default::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../images/background.webp"); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0.7;
 }
 
 #header-default .content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 150px;
+    justify-content: center;
+    gap: 250px;
+    max-width: 1200px;
     width: 100%;
-    height: 620px;
-    position: relative;
+    padding: 0 20px;
+    z-index: 1; 
 }
 
-#header-default .content .left .ip-copied {
-    color: var(--green-color);
-    background: var(--ip-copied-background);
-    padding: 10px 20px;
-    width: fit-content;
-    border-radius: 5px;
-    font-size: 17px;
-    display: none;
-}
-
-#header-default .content .left .ip-copied.active {
-    display: flex;
-}
-
-#header-default .content .left .ip-copied.error {
-    background: var(--warning-background);
-    color: var(--red-color);
-}
 
 #header-default .content .left {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: left;
+    max-width: 600px; 
 }
 
 #header-default .content .left .server-name {
@@ -118,98 +116,35 @@
     opacity: 0.8;
 }
 
-#header-default .content .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-#header-default .content .right .logo-img {
-    max-width: 150px;
-    transform: translatey(0px);
-    animation: float 4s ease-in-out infinite;
-}
-
-#header-default .content .right .stats {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    background: var(--stats-background);
-    padding: 20px;
-    border-radius: 5px;
-}
-
-#header-default .content .right .stats .stat {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-#header-default .content .right .stats .stat .icon {
-    border-radius: 5px;
-    background: var(--stat-icon-background-2);
-    padding: 10px;
-    transition: .2s ease-in-out;
-}
-
-#header-default .content .right .stats .stat .icon i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    position: relative;
-    background: var(--main-color);
-    color: var(--white-color);
-    border-radius: 5px;
-}
-
-#header-default .content .right .stats .stat:hover .icon {
-    transform: scale(1.1);
-}
-
-#header-default .content .right .stats .stat .texts {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#header-default .content .right .stats .stat .texts h5 {
-    color: var(--white-color);
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-#header-default .content .right .stats .stat .texts p {
-    color: var(--description-color);
-    font-size: 15px;
-    font-weight: 400;
-}
-
-#header-default .content .right .stats .stat .texts p span {
+#header-default .content .left .ip-copied {
     color: var(--green-color);
+    background: var(--ip-copied-background);
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 17px;
+    display: none;
 }
 
-.minecraft-server-ip {
-    font-weight: bold;
-    background: linear-gradient(45deg, #48b1be, #4690c2); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    background-clip: text; 
+#header-default .content .left .ip-copied.active {
+    display: flex;
+}
+
+#header-default .content .left .ip-copied.error {
+    background: var(--warning-background);
+    color: var(--red-color);
+}
+
+.start-img {
+    max-width: 380px;
+    height: auto;
 }
 
 #arrow-box {
     position: absolute;
     top: 70vh; 
     left: 50vw; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -30%); 
     z-index: 10;
 }
 
@@ -227,6 +162,10 @@
     color: #4d95d8 !important;
 }
 
+#about {
+    margin: 46px;
+}
+
 /*About*/
 #about .content {
     display: flex;
@@ -240,7 +179,7 @@
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
 }
 
 #about .content .left .section-title {
@@ -302,15 +241,19 @@
     width: 210px;
     height: calc(100% - 40px);
     border-radius: 40px 3px;
-    background: var(--main-color);
+    background: rgba(93, 95, 92, 0.082);
     z-index: 0;
     bottom: 5px;
-
+    left: 75px;
 }
 
 /*Mini games*/
 #minigames {
-    background: var(--stats-background);
+    padding-top: 15px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 10px;
+    background: rgba(93, 95, 92, 0.082);
 }
 
 #minigames .content {
@@ -570,6 +513,10 @@
 /* #faq {
     background: var(--stats-background);
 } */
+#faq{
+    padding-left: 46px;
+    padding-right: 46px;
+}
 
 #faq .content {
     display: flex;
@@ -632,8 +579,7 @@
 #faq .content .accordion .accordion-item {
     background: var(--stats-background);
     border-radius: 5px;
-}
-
+} 
 #faq .content .accordion .accordion-item .accordion-item-header {
     padding: 20px 50px 20px 20px;
     line-height: 1.6;
@@ -699,6 +645,13 @@
         padding: 120px 90px;
         height: 100%;
         gap: 60px;
+    }
+    .start-img {
+        display: none;
+    }
+
+    .img-background {
+        display: none;
     }
 
     #header-default .content .left {

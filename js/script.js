@@ -18,8 +18,7 @@ const serverLogo = document.querySelector(".logo-img");
 /*Config header*/
 const serverIp = document.querySelector(".minecraft-server-ip");
 const serverLogoHeader = document.querySelector(".logo-img-header");
-const discordOnlineUsers = document.querySelector(".discord-online-users");
-const minecraftOnlinePlayers = document.querySelector(".minecraft-online-players");
+const minecraftOnlinePlayers = document.querySelector(".online-count");
 
 /*Config contact*/
 const contactForm = document.querySelector(".contact-form");

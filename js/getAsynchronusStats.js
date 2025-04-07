@@ -28,27 +28,10 @@ const setMinecraftOnlineUsers = async () => {
   minecraftOnlinePlayers.innerHTML = await getMinecraftOnlinePlayers()
 }
 
-const setDiscordOnlineUsers = async () => {
-  discordOnlineUsers.innerHTML = await getDiscordOnlineUsers();
-}
-
 async function getOnlineUsers() {
   const results = await Promise.allSettled([
     setMinecraftOnlineUsers(),
-    setDiscordOnlineUsers(),
   ]);
-
-  results.forEach((result, index) => {
-    if (result.status === 'fulfilled') {
-      if (index === 0) {
-        console.log('Discord Users:', result.value);
-      } else {
-        console.log('Minecraft Players:', result.value);
-      }
-    } else {
-      console.error('Error in fetching data:', result.reason);
-    }
-  });
 }
 
 getOnlineUsers();

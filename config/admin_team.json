@@ -5,13 +5,13 @@
                 "inGameName": "Norbit4",
                 "rank": "CEO",
                 "skinUrlOrPathToFile": "",
-                "rankColor": "rgba(255, 3, 3, 1)"
+                "rankColor": "rgba(250, 67, 67, 0.918)"
             },
             {
                 "inGameName": "Smaikuu",
                 "rank": "CEO",
                 "skinUrlOrPathToFile": "",
-                "rankColor": "rgba(255, 3, 3, 1)"
+                "rankColor": "rgba(250, 67, 67, 0.918)"
             }   
         ]
     },
@@ -21,13 +21,13 @@
                 "inGameName": "pastelgrilpll",
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "",
-                "rankColor": "rgba(255, 3, 3, 1)"
+                "rankColor": "rgba(250, 67, 67, 0.918)"
             },
             {
                 "inGameName": "xSesamix",
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "",
-                "rankColor": "rgba(255, 3, 3, 1)"
+                "rankColor": "rgba(250, 67, 67, 0.918)"
             }
         ]
     }

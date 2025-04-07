@@ -9,8 +9,9 @@
 
 :root {
   --main-font: 'Inter', sans-serif;
-  --main-color: #4695c2;
-  --background-color: #24272B;
+  /* --main-color: #4695c2; */
+  --main-color: #4e9bc7;
+  --background-color: #1d1f20;
   --white-color: #FFFFFF;
   --black-color: #000000;
   --description-color: #D2D0D0;
@@ -19,7 +20,7 @@
   --ip-copied-background: rgba(15, 116, 163, 0.17);
   --ip-copied-icon-background: rgba(16, 202, 193, 0.521);
 
-  --copy-ip-button-background: rgba(24, 123, 180, 0.753);
+  --copy-ip-button-background: rgba(23, 162, 243, 0.637);
   --how-to-join-button-background: #5865f2ad;
   --stats-background: rgba(110, 110, 110, 0.137);
   --stat-icon-background-2: rgba(41, 156, 202, 0.432);
@@ -48,9 +49,23 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 150px;
+  padding: 45px 310px;
   background: var(--background-color);
   transition: 0.3s ease-in-out;
+}
+.online-count {
+  margin-right: 6px;
+  font-weight: 600;
+  color: var(--green-color);
+}
+
+.online {
+  color: var(--white-color);
+  margin-left: 16px;
+  font-size: 16px; 
+  display: flex;
+  align-items: center; 
+  height: 100%; 
 }
 
 .navbar-global a {
@@ -123,7 +138,6 @@ body {
   border-radius: 7px;
   height: 33px;
   width: 33px;
-  background-color: rgba(255, 255, 255, 0.789);
   color: var(--white-color);
   font-size: 20px;
   cursor: pointer;
@@ -131,7 +145,6 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.172);
 }
 
 .navbar-global .menu-mobile .hamburger:hover {
@@ -149,7 +162,7 @@ body {
 
 /*Footer*/
 #footer {
-  padding: 20px 150px;
+  padding: 20px 200px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -208,13 +221,41 @@ section:not(#header-default) .content {
 /*Responsive*/
 @media screen and (max-width: 1625px) {
   .navbar-global {
-    padding: 20px 90px;
+    padding: 20px 30px;
   }
 }
 
 @media screen and (max-width: 819px) {
   .navbar-global {
-    padding: 20px 30px;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 90px;
+  }
+
+  .navbar-global .menu-mobile {
+    width: 100%;
+  }
+
+  .navbar-global .menu-mobile .hamburger {
+    display: flex;
+  }
+
+  .navbar-global .links {
+    flex-direction: column;
+    order: 2;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  /* turning of styles from wiki link */
+  .navbar-global .links a {
+    margin-left: 0px !important;
+    padding-left: 0 !important;
+    padding: 0, 0, 0, 0 !important;
+    border-radius: 0px !important;
+    border-width: 0px !important;
+    border-style: none !important;
   }
 }
 
