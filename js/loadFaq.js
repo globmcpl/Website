@@ -25,24 +25,23 @@ fetch('config/faq.json')
 
             faqList.appendChild(faqItem);
 
-            // Toggle functionality
             faqHeader.addEventListener('click', () => {
-                const isActive = faqItem.classList.contains('active');
+                const isActive = faqHeader.classList.contains('active');
                 
-                // Close all other items
-                document.querySelectorAll('.accordion-item').forEach(item => {
-                    item.classList.remove('active');
-                    item.querySelector('.accordion-item-body').style.maxHeight = null;
+                document.querySelectorAll('.accordion-item-header').forEach(header => {
+                    header.classList.remove('active');
+                    header.nextElementSibling.style.maxHeight = null;
                 });
-
+            
                 if (!isActive) {
-                    faqItem.classList.add('active');
+                    faqHeader.classList.add('active');
                     faqBody.style.maxHeight = faqBody.scrollHeight + 'px';
                 } else {
-                    faqItem.classList.remove('active');
+                    faqHeader.classList.remove('active');
                     faqBody.style.maxHeight = null;
                 }
             });
+            
         });
     })
     .catch(error => console.error('Error loading FAQ:', error));
