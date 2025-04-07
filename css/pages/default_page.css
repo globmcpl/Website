@@ -1,19 +1,31 @@
 /*Header*/
 #header-default {
+    position: relative; 
     background: url("../../images/background.webp") no-repeat fixed center;
     min-width: 100%;
-    min-height: 400px;
+    min-height: 330px;
     height: 30vh;
     background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
     z-index: 0;
     display: flex;
     align-items: center;
+    overflow: hidden; 
+}
+
+#header-default::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 27, 27, 0.829); 
+    z-index: 1;
+    pointer-events: none; 
 }
 
 #header-default .content {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 20px;

@@ -1,5 +1,9 @@
 @import "css/global.css";
 
+#admin-team {
+    padding-left: 46px;
+    padding-right: 46px;
+}
 /*Admin-Team*/
 #admin-team .content {
     display: flex;
