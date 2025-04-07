@@ -40,12 +40,28 @@
     padding: 0 20px;
     z-index: 1; 
 }
+.icon{
+    padding: 6px;
+}
+.desc-element{
+    display: inline-block;
+    padding: 6px;
+    background-color: rgba(78, 78, 78, 0.192);
+    border-radius: 19px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: 14.5px;
+    margin-bottom: 35px;
+    margin-top: 7px;
+}
 
 
 #header-default .content .left {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     text-align: left;
     max-width: 600px; 
 }
@@ -69,7 +85,13 @@
     font-weight: 900;
 }
 
-#header-default .content .left .server-description {
+#header-default .server-description {
+    margin-bottom: 7px;
+    gap: 8px;
+    display: flex;
+}
+
+#header-default .content .left{
     color: var(--description-color);
     font-size: 18px;
     font-weight: 400;
@@ -86,7 +108,7 @@
 #header-default .content .left .buttons .copy-ip {
     background: var(--copy-ip-button-background);
     border: 2px solid var(--main-color);
-    border-radius: 3px;
+    border-radius: 7px;
     padding: 10px 30px;
     color: var(--white-color);
     font-size: 17px;
@@ -102,8 +124,8 @@
 
 #header-default .content .left .buttons .how-to-join {
     background: var(--how-to-join-button-background);
-    border: 2px solid rgb(87, 97, 238);
-    border-radius: 3px;
+    border: 2px solid rgba(117, 124, 226, 0.815);
+    border-radius: 7px;
     padding: 10px 30px;
     color: var(--description-color);
     font-size: 17px;
