@@ -126,7 +126,8 @@
   }
 
   .fa-circle-xmark{
-    color: #d33925e0;
+    /* color: #d33925e0; */
+    color: #727272e0;
   }
 
   @media screen and (max-width: 1625px) {

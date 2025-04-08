@@ -93,7 +93,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Czas trwania": "<b>na całą edycje<b/>"
+                    "Czas trwania": "<b>cała edycja<b/>"
                 }
 
             },
@@ -102,7 +102,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>19 monet<b/>"
+                    "Monety": "<b>19 monet<b/> "
                 }
 
             },
@@ -176,7 +176,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Czas trwania": "<b>na całą edycje<b/>"
+                    "Czas trwania": "<b>cała edycja<b/>"
                 }
 
             },
@@ -259,7 +259,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Czas trwania": "<b>na całą edycje<b/>"
+                    "Czas trwania": "<b>cała edycja<b/>"
                 }
 
             },
@@ -342,7 +342,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Czas trwania": "<b>na miesiąc<b/>"
+                    "Czas trwania": "<b>miesiąc<b/>"
                 }
 
             },
