@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+
+
 #header .content .info .title {
   color: var(--white-color);
   text-transform: uppercase;
@@ -9,6 +12,15 @@
   color: var(--main-color);
 }
 
+#ranks-table th, #ranks-table td {
+  color: rgb(221, 217, 217);
+}
+
+
+#ranks-table {
+  font-family: 'Barlow', 'Trebuchet MS', sans-serif;
+}
+
 #header .content .info .minecraft-server-ip {
   color: var(--white-color);
   text-transform: uppercase;
@@ -17,10 +29,56 @@
   margin: 20px 0 0 0;
 }
 
+/* Ogólne wyrównanie komórek do środka */
+#ranks-table {
+  width: 70%;
+  margin: auto;
+  font-size: 17px;
+  overflow: hidden;    /* Ukryj zaokrąglenia wewnętrzne */
+  border-collapse: collapse; /* Żeby komórki się stykały */
+  background-color: rgba(255, 255, 255, 0.718);
+  text-align: center;
+}
+
+/* Węższa pierwsza kolumna i zawijanie tekstu */
+#ranks-table td:first-child, #ranks-table th:first-child {
+  text-align: left;
+  padding-left: 45px;
+  padding-right: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 18%; /* <-- USTAWIAMY SZEROKOŚĆ pierwszej kolumny */
+  white-space: normal; /* <-- ZEZWALAMY NA ZAWIJANIE TEKSTU */
+  word-break: break-word; /* <-- Łamiemy słowa, gdy trzeba */
+}
+
+
+#ranks-table th, #ranks-table td {
+  border: 2px solid #456db88a;
+  /* border: 2px solid #7e96c4b9; */
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+#ranks-table th {
+  font-size: 18px;
+}
+
+#ranks-table td {
+  font-size: 16px;
+}
+
+/* Wyrównanie pierwszej kolumny do lewej + odstęp */
+#ranks-table td:first-child, #ranks-table th:first-child {
+  text-align: left;
+  padding-left: 20px; /* DODANE żeby było odsunięcie */
+}
+
 #rang-box {
-    font-family: 'Trebuchet MS', sans-serif;
+    /* font-family: 'Trebuchet MS', sans-serif; */
     padding: 100px;
-    color: rgb(12, 12, 12);
   }
 
   th[data-mc="mc"] {
@@ -31,11 +89,10 @@
   #ranks-table {
     width: 70%;
     margin: auto;
-    box-shadow: #1f1f1f 0px 0px 2px;
     font-size: 17px;
-    background-color: rgba(255, 255, 255, 0.718);
+    background-color: rgba(41, 40, 40, 0.685);
     text-align: center;
-    border-radius: 25px;
+    border-radius: 5px;
   }
 
   #ranks-table tr {
@@ -56,23 +113,20 @@
   }
 
   #prefixes-row {
-    background-color: #212529ed;
-    font-size: 22px;
+    background-color: #181818ed;
+    font-size: 28px;
   }
 
   .group-row {
-    font-size: 20px;
-    background-color: #0000000c;
+    background-color: #00000021;
   }
 
-  .fa-check{
-    color: #075f07;
-    font-weight: bold;
+  .fa-circle-check {
+    color: #49af1a;
   }
 
-  .fa-times{
-    color: #800606;
-    font-weight: bold;
+  .fa-circle-xmark{
+    color: #d33925e0;
   }
 
   @media screen and (max-width: 1625px) {

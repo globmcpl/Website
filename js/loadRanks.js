@@ -85,7 +85,7 @@ const createAttributeRow = (data, tbody, attribute, group_id, group) => {
     value = rank.groups[group_id].attributes[attribute]
 
     if (typeof value === 'boolean') {
-      value = value ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+      value = value ? '<i class="fa-solid fa-circle-check"></i>' : '<i class="fa-solid fa-circle-xmark"></i>';
     }
 
     tbody += `<td>${value}</td>`;
