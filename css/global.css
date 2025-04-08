@@ -10,13 +10,14 @@
 :root {
   --main-font: 'Inter', sans-serif;
   /* --main-color: #4695c2; */
-  --main-color: #4e9bc7;
+  /* --main-color: #4e9bc7; */
+  --main-color: #459de6;
   --background-color: #1d1f20;
   --white-color: #FFFFFF;
   --black-color: #000000;
   --description-color: #D2D0D0;
 
-  --green-color: #4aeaff;
+  --green-color: #4accff;
   --ip-copied-background: rgba(15, 116, 163, 0.17);
   --ip-copied-icon-background: rgba(16, 202, 193, 0.521);
 
@@ -55,12 +56,6 @@ body {
 }
 
 
-.online-count {
-  margin-right: 6px;
-  font-weight: 600;
-  color: var(--green-color);
-}
-
 .online {
   color: var(--white-color);
   margin-left: 16px;
@@ -69,6 +64,37 @@ body {
   align-items: center; 
   height: 100%; 
 }
+
+.online-count {
+  margin-right: 6px;
+  font-weight: 600;
+  color: var(--green-color);
+}
+
+.online-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+  animation: blink 2.5s infinite; 
+  margin-right: 6px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 .navbar-global a {
   text-decoration: none;
@@ -166,7 +192,7 @@ body {
 
 /*Footer*/
 #footer {
-  padding: 20px 200px;
+  padding: 15px 290px;
   width: 100%;
   display: flex;
   flex-direction: row;
