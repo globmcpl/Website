@@ -29,33 +29,29 @@
   margin: 20px 0 0 0;
 }
 
-/* Ogólne wyrównanie komórek do środka */
 #ranks-table {
   width: 70%;
   margin: auto;
   font-size: 17px;
-  overflow: hidden;    /* Ukryj zaokrąglenia wewnętrzne */
-  border-collapse: collapse; /* Żeby komórki się stykały */
+  overflow: hidden;    
+  border-collapse: collapse; 
   background-color: rgba(255, 255, 255, 0.718);
   text-align: center;
 }
 
-/* Węższa pierwsza kolumna i zawijanie tekstu */
 #ranks-table td:first-child, #ranks-table th:first-child {
   text-align: left;
   padding-left: 45px;
   padding-right: 60px;
   padding-top: 12px;
   padding-bottom: 12px;
-  width: 18%; /* <-- USTAWIAMY SZEROKOŚĆ pierwszej kolumny */
-  white-space: normal; /* <-- ZEZWALAMY NA ZAWIJANIE TEKSTU */
-  word-break: break-word; /* <-- Łamiemy słowa, gdy trzeba */
+  width: 18%; 
+  white-space: normal; 
+  word-break: break-word; 
 }
-
 
 #ranks-table th, #ranks-table td {
   border: 2px solid #456db88a;
-  /* border: 2px solid #7e96c4b9; */
   padding: 5px;
   text-align: center;
   vertical-align: middle;
@@ -70,14 +66,12 @@
   font-size: 16px;
 }
 
-/* Wyrównanie pierwszej kolumny do lewej + odstęp */
 #ranks-table td:first-child, #ranks-table th:first-child {
   text-align: left;
-  padding-left: 20px; /* DODANE żeby było odsunięcie */
+  padding-left: 20px; 
 }
 
 #rang-box {
-    /* font-family: 'Trebuchet MS', sans-serif; */
     padding: 100px;
   }
 
@@ -126,7 +120,6 @@
   }
 
   .fa-circle-xmark{
-    /* color: #d33925e0; */
     color: #727272e0;
   }
 

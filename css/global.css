@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); /*font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -45,6 +46,7 @@ body {
 
 /*Navbar*/
 .navbar-global {
+  font-family: 'Barlow', 'Trebuchet MS', sans-serif;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -95,6 +97,15 @@ body {
   }
 }
 
+.wiki-link {
+  width: 70px;
+  padding-left: 15px;
+  margin-left: 15px;
+  border-radius: 8px;
+  border-width: 0.5px;
+  border-style: solid;
+}
+
 
 .navbar-global a {
   text-decoration: none;
@@ -124,7 +135,7 @@ body {
   margin: auto 0 auto 0;
   color: var(--white-color);
   font-weight: 900;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .navbar-global .links {
@@ -136,7 +147,7 @@ body {
 
 .navbar-global .links .link {
   color: var(--description-color);
-  font-size: 18px;
+  font-size: 18.5px;
   font-weight: 600;
   text-decoration: none;
   position: relative;
