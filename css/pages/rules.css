@@ -16,28 +16,6 @@
     color: white;
 }
 
-#rules .warning {
-    background: var(--warning-background);
-    padding: 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#rules .warning p {
-    color: var(--warning-color);
-    font-size: 17px;
-}
-
-#rules .warning .icon {
-    border-radius: 5px;
-    background: var(--warning-icon-background);
-    padding: 10px;
-    transition: .2s ease-in-out;
-}
-
 #rules .warning .icon i {
     display: flex;
     justify-content: center;
@@ -51,146 +29,85 @@
     border-radius: 5px;
 }
 
-#rules .warning:hover .icon {
-    transform: scale(1.1);
+.rules-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #252525a6;    
+    border-radius: 15px;
+    border: #9b9b9b2a solid 1px;
+    padding-left: 40px; 
+    padding-right: 40px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin: 20px 0;
+}
+  
+  .rules-info h2 {
+    font-size: 24px;
+    color: var(--white-color, #fff);
+    margin: 0 0 13px 0; 
+  }
+  
+  .rules-info p {
+    color: var(--description-color, #ccc);
+    font-size: 16px;
+    margin: 0;
+  }
+  
+#rules {
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-#rules .rules {
-    display: flex;
+.btn-rule {
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    background: rgb(58, 111, 190);
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-rule:hover {
+    background: rgba(58, 111, 190, 0.74);
+    transform: scale(1.05); 
+    transition: transform 0.5s ease-in-out; 
+    color: #ffffff;
+}
+.fa-cloud-arrow-down{
+    margin-right: 2px;
+}
+
+@media screen and (max-width: 600px) {
+.rules-bar {
     flex-direction: column;
     gap: 20px;
 }
 
-#rules .rules .rules-title {
-    font-size: 30px;
-    margin-bottom: 25px;
-    font-weight: 700;
-    color: var(--white-color);
-    position: relative;
+.rules-info {
+    text-align: center; 
 }
 
-#rules .rules .rules-title::before {
-    content: "";
-    position: absolute;
-    bottom: -9px;
-    left: 0;
-    width: 150px;
-    height: 1px;
-    border-radius: 5px;
-    background: var(--description-color);
-}
-
-#rules .rules .rules-title::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    border-radius: 5px;
-    background: var(--main-color);
-}
-
-#rules .rules .rules-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 10px;
-}
-
-#rules .rules .rules-list .rule {
-    color: var(--description-color);
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-#rules .rules .rules-list .rule span {
-    color: var(--main-color);
-}
-
-/*Server Join*/
-#join-server{
-    background: var(--stats-background);
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#join-server .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-#join-server .content .section-title {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--white-color);
-    position: relative;
+.rules-button {
     text-align: center;
 }
 
-#join-server .content .section-title span {
-    color: var(--main-color);
+.btn-rule {
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0 auto;   
+}
 }
 
-#join-server .content .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-#join-server .content .buttons .copy-ip {
-    background: var(--copy-ip-button-background);
-    border: 2px solid var(--main-color);
-    border-radius: 3px;
-    padding: 10px 30px;
-    color: var(--white-color);
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#join-server .content .buttons .join-discord {
-    background: var(--how-to-join-button-background);
-    border: 2px solid var(--description-color);
-    border-radius: 3px;
-    padding: 10px 30px;
-    color: var(--description-color);
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-#join-server .content .buttons .copy-ip:hover, #join-server .content .buttons .join-discord:hover {
-    opacity: 0.8;
-}
-
-#join-server .content .ip-copied {
-    color: var(--green-color);
-    background: var(--ip-copied-background);
-    padding: 10px 20px;
-    width: fit-content;
-    border-radius: 5px;
-    font-size: 17px;
-    display: none;
-}
-
-#join-server .content .ip-copied.active {
-    display: flex;
-}
-
-#join-server .content .ip-copied.error {
-    background: var(--warning-background);
-    color: var(--red-color);
-}
-
-/*Rules*/
 @media screen and (max-width:600px){
     #rules .rules .rules-list  {
         margin-left: 0px;
