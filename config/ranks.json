@@ -33,11 +33,18 @@
                     "Alchemik": false,
                     "Kot": false,
                     "Enchanting": false,
-                    "Nether": false,
                     "Wilk": false,
                     "Mending": false,
                     "Silk Touch": false,
-                    "Klucze": false
+                    "Klucze": false,
+                    "Sonic": false, 
+                    "Archeolog": false,  
+                    "Kucie": false,  
+                    "Drwal": false,     
+                    "Farma": false,    
+                    "Gornik": false,     
+                    "Shulker": false, 
+                    "Villager": false  
                 }
             },
             {
@@ -47,19 +54,17 @@
                 "attributes": {
                     "Liczba domów": "1 dom",
                     "Liczba działek": "1 działka",
-                    "Liczba aukcji": "3 aukcje",
+                    "Liczba aukcji": "2 aukcje",
                     "Reset dziennych": false,
                     "Specjalna ranga na Discord": false,
-                    "Pisanie na kolorowo": false,
-                    "Pisanie innymi formatami": false,
                     "Kolory nicku": 0,
-                    "Garderoba Czapki": 4,
-                    "Garderoba Ręka": 0,
+                    "Garderoba Czapki": "Gracz",
+                    "Garderoba Balony": "Brak",
                     "Maskotki": 0,
                     "Glowing": 0,
                     "Cząsteczki": 0,
                     "Nakrycia": 0,
-                    "Max limit graczy na działce": 5,
+                    "Skoty kowala": 2,
                     "Dedykowany kanał z administracją": false,
                     "Dostęp do Strefy VIP": false
                 }
@@ -102,7 +107,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>19 monet<b/> "
+                    "Monety": "<b>9 monet<b/> "
                 }
 
             },
@@ -115,12 +120,19 @@
                     "Jedzenie": true,
                     "Alchemik": true,
                     "Kot": false,
-                    "Enchanting": true,
-                    "Nether": true,
+                    "Enchanting": false,
                     "Wilk": false,
                     "Mending": true,
                     "Silk Touch": true,
-                    "Klucze": false
+                    "Klucze": false,
+                    "Sonic": false, 
+                    "Archeolog": false,  
+                    "Kucie": true,  
+                    "Drwal": true,     
+                    "Farma": false,    
+                    "Gornik": false,     
+                    "Shulker": false, 
+                    "Villager": false  
                 }
             },
             {
@@ -130,19 +142,19 @@
                 "attributes": {
                     "Liczba domów": "2 domy",
                     "Liczba działek": "1 działka",
-                    "Liczba aukcji": "5 aukcji",
+                    "Liczba aukcji": "4 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
                     "Pisanie na kolorowo": false,
                     "Pisanie innymi formatami": false,
                     "Kolory nicku": 0,
-                    "Garderoba Czapki": 4,
-                    "Garderoba Ręka": 0,
+                    "Garderoba Czapki": "Vip",
+                    "Garderoba Balony": "Vip",
                     "Maskotki": 0,
                     "Glowing": 0,
                     "Cząsteczki": 1,
                     "Nakrycia": 0,
-                    "Max limit graczy na działce": 5,
+                    "Skoty kowala": 2,
                     "Dedykowany kanał z administracją": false,
                     "Dostęp do Strefy VIP": true
                 }
@@ -185,7 +197,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>39 monet<b/>"
+                    "Monety": "<b>29 monet<b/>"
                 }
 
             },
@@ -196,14 +208,21 @@
                 "attributes": {
                     "Start": true,
                     "Jedzenie": true,
-                    "Alchemik": true,
+                    "Alchemik": false,
                     "Kot": true,
                     "Enchanting": true,
-                    "Nether": true,
                     "Wilk": true,
                     "Mending": true,
                     "Silk Touch": true,
-                    "Klucze": false
+                    "Klucze": false,
+                    "Sonic": false, 
+                    "Archeolog": false,  
+                    "Kucie": true,  
+                    "Drwal": true,     
+                    "Farma": true,    
+                    "Gornik": false,     
+                    "Shulker": false, 
+                    "Villager": false  
                 }
             },
             {
@@ -212,20 +231,18 @@
                 "color": "#ACAAAA",
                 "attributes": {
                     "Liczba domów": "3 domy",
-                    "Liczba działek": "2 działki",
-                    "Liczba aukcji": "8 aukcji",
+                    "Liczba działek": "1 działki",
+                    "Liczba aukcji": "6 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
-                    "Pisanie na kolorowo": true,
-                    "Pisanie innymi formatami": true,
                     "Kolory nicku": 1,
-                    "Garderoba Czapki": 4,
-                    "Garderoba Ręka": 0, 
+                    "Garderoba Czapki": "Vip+",
+                    "Garderoba Balony": "Vip+",
                     "Maskotki": 0,
                     "Glowing": 1,
                     "Cząsteczki": 3,
                     "Nakrycia": 1,
-                    "Max limit graczy na działce": 10,
+                    "Skoty kowala": 3,
                     "Dedykowany kanał z administracją": false,
                     "Dostęp do Strefy VIP": true
                 }
@@ -268,7 +285,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>79 monet<b/>"
+                    "Monety": "<b>49 monet<b/>"
                 }
 
             },
@@ -282,11 +299,106 @@
                     "Alchemik": true,
                     "Kot": true,
                     "Enchanting": true,
-                    "Nether": true,
                     "Wilk": true,
                     "Mending": true,
                     "Silk Touch": true,
-                    "Klucze": true
+                    "Klucze": false,
+                    "Sonic": true, 
+                    "Archeolog": true,  
+                    "Kucie": true,  
+                    "Drwal": true,     
+                    "Farma": true,    
+                    "Gornik": true,     
+                    "Shulker": false, 
+                    "Villager": false  
+                }
+            },
+            {
+                "name": "PERMISJE",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Liczba domów": "4 domów",
+                    "Liczba działek": "2 działki",
+                    "Liczba aukcji": "8 aukcji",
+                    "Reset dziennych": true,
+                    "Specjalna ranga na Discord": true,
+                    "Kolory nicku": 3,
+                    "Garderoba Czapki": "Svip",
+                    "Garderoba Balony": "Svip",
+                    "Maskotki": 1,
+                    "Glowing": 2,
+                    "Cząsteczki": 5,
+                    "Nakrycia": 2,
+                    "Skoty kowala": 3,
+                    "Dedykowany kanał z administracją": false,
+                    "Dostęp do Strefy VIP": true
+                }
+            },
+            {
+                "name": "KOMENDY",
+                "text-color": "black",
+                "color": "yellow",
+                "attributes": {
+                    "/hat": true,
+                    "/workbench": true,
+                    "/repair": "5 godz.",
+                    "/feed": "2 godz.",
+                    "/enderchest": true,
+                    "/anvil": true,
+                    "/msgtoggle": true,
+                    "/podpis": true,
+                    "/grindstone": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "SVIP+",
+        "color": "aqua",
+        "gradient": "(90deg, rgba(0,255,255,1) 35%, rgba(0,156,156,1) 100%)",
+        "prefix": "[SVIP+]",
+        "groups": [
+            {
+                "name": "OKRES",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Czas trwania": "<b>cała edycja<b/>"
+                }
+
+            },
+            {
+                "name": "Cena",
+                "text-color": "black",
+                "color": "#ACAAAA",
+                "attributes": {
+                    "Monety": "<b>69 monet<b/>"
+                }
+
+            },
+            {
+                "name": "Zestawy",
+                "text-color": "black",
+                "color": "red",
+                "attributes": {
+                    "Start": true,
+                    "Jedzenie": true,
+                    "Alchemik": true,
+                    "Kot": true,
+                    "Enchanting": true,
+                    "Wilk": true,
+                    "Mending": true,
+                    "Silk Touch": true,
+                    "Klucze": true,
+                    "Sonic": true, 
+                    "Archeolog": true,  
+                    "Kucie": true,  
+                    "Drwal": true,     
+                    "Farma": true,    
+                    "Gornik": true,     
+                    "Shulker": false, 
+                    "Villager": false                  
                 }
             },
             {
@@ -299,16 +411,14 @@
                     "Liczba aukcji": "12 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
-                    "Pisanie na kolorowo": true,
-                    "Pisanie innymi formatami": true,
                     "Kolory nicku": 3,
-                    "Garderoba Czapki": 15,
-                    "Garderoba Ręka": 0,  
+                    "Garderoba Czapki": "Svip+",
+                    "Garderoba Balony": "Svip+",
                     "Maskotki": 1,
                     "Glowing": 2,
                     "Cząsteczki": 5,
                     "Nakrycia": 2,
-                    "Max limit graczy na działce": 10,
+                    "Skoty kowala": 5,
                     "Dedykowany kanał z administracją": false,
                     "Dostęp do Strefy VIP": true
                 }
@@ -351,7 +461,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>39 monet<b/>"
+                    "Monety": "<b>29 monet<b/>"
                 }
 
             },
@@ -365,11 +475,18 @@
                     "Alchemik": true,
                     "Kot": true,
                     "Enchanting": true,
-                    "Nether": true,
                     "Wilk": true,
                     "Mending": true,
                     "Silk Touch": true,
-                    "Klucze": true
+                    "Klucze": true,
+                    "Sonic": true, 
+                    "Archeolog": true,  
+                    "Kucie": true,  
+                    "Drwal": true,     
+                    "Farma": true,    
+                    "Gornik": true,     
+                    "Shulker": true, 
+                    "Villager": true  
                 }
             },
             {
@@ -377,21 +494,19 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Liczba domów": "5 domów",
+                    "Liczba domów": "8 domów",
                     "Liczba działek": "3 działki",
                     "Liczba aukcji": "15 aukcji",
                     "Reset dziennych": true,
                     "Specjalna ranga na Discord": true,
-                    "Pisanie na kolorowo": true,
-                    "Pisanie innymi formatami": true,
                     "Kolory nicku": "wszystkie",
                     "Garderoba Czapki": "wszystkie",
-                    "Garderoba Ręka": "wszystkie",   
+                    "Garderoba Balony": "wszystkie",
                     "Maskotki": 5,
                     "Glowing": 4,
                     "Cząsteczki": 8,
                     "Nakrycia": 4,
-                    "Max limit graczy na działce": 10,
+                    "Skoty kowala": 6,
                     "Dedykowany kanał z administracją": true,
                     "Dostęp do Strefy VIP": true
                 }
