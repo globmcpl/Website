@@ -166,13 +166,13 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "5 godz.",
-                    "/feed": "2 godz.",
+                    "/repair": false,
+                    "/feed": false,
                     "/enderchest": false,
                     "/anvil": false,
                     "/msgtoggle": false,
                     "/podpis": false,
-                    "/grindstone": false
+                    "/grindstone": true
                 }
             }
         ]
@@ -254,9 +254,9 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "5 godz.",
-                    "/feed": "2 godz.",
-                    "/enderchest": false,
+                    "/repair": false,
+                    "/feed": "4 godz.",
+                    "/enderchest": true,
                     "/anvil": false,
                     "/msgtoggle": false,
                     "/podpis": false,
@@ -342,7 +342,7 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "5 godz.",
+                    "/repair": "4 godz.",
                     "/feed": "2 godz.",
                     "/enderchest": true,
                     "/anvil": true,
@@ -430,8 +430,8 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "5 godz.",
-                    "/feed": "2 godz.",
+                    "/repair": "3 godz.",
+                    "/feed": "1 godz.",
                     "/enderchest": true,
                     "/anvil": true,
                     "/msgtoggle": true,
@@ -518,8 +518,8 @@
                 "attributes": {
                     "/hat": true,
                     "/workbench": true,
-                    "/repair": "5 godz.",
-                    "/feed": "2 godz.",
+                    "/repair": "2 godz.",
+                    "/feed": "1 godz.",
                     "/enderchest": true,
                     "/anvil": true,
                     "/msgtoggle": true,
