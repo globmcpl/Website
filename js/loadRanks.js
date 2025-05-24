@@ -18,7 +18,7 @@ const createHeaders = (data, table) => {
       `
         <br>
           <p class="rank-required">
-            Wymaga rangi SVIP
+            Wymaga rangi SVIP+
         </p>
       `
     }

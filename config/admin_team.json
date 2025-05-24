@@ -15,6 +15,15 @@
             }   
         ]
     },
+    "devTeam": {
+        "Developerzy": [
+            {
+                "inGameName": "NeweeR",
+                "rank": "DEV",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(250, 67, 67, 0.918)"
+            }]
+        },
     "helpersTeam": {
         "Helperzy": [
             {
@@ -24,11 +33,29 @@
                 "rankColor": "rgba(250, 67, 67, 0.918)"
             },
             {
-                "inGameName": "xSesamix",
+                "inGameName": "maritty",
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "",
                 "rankColor": "rgba(250, 67, 67, 0.918)"
-            }
+            },
+            {
+                "inGameName": "Bebolcia",
+                "rank": "Helper",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(250, 67, 67, 0.918)"
+            },
+            {
+                "inGameName": "Poniaczy",
+                "rank": "Helper",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(250, 67, 67, 0.918)"
+            },
+            {
+                "inGameName": "ItzNightK1ing",
+                "rank": "Helper",
+                "skinUrlOrPathToFile": "",
+                "rankColor": "rgba(250, 67, 67, 0.918)"
+            }    
         ]
     }
 }
