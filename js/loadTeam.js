@@ -56,13 +56,15 @@ const getSkinByUuid = async (username) => {
     }
 }
 
+
 const getUuidByUsername = async (username) => {
     try {
-        const usernameToUuidApi = `https://api.minetools.eu/uuid/${username}`;
+        // const usernameToUuidApi = `https://api.minetools.eu/uuid/${username}`;
+        const usernameToUuidApi = `https://playerdb.co/api/player/minecraft/${username}`;
         let response = await fetch(usernameToUuidApi);
         let data = await response.json();
 
-        return data.id;
+        return data.data.player.raw_id;
     } catch (e) {
         console.log(e);
         return "None";

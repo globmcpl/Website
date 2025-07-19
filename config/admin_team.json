@@ -27,12 +27,6 @@
     "helpersTeam": {
         "Helperzy": [
             {
-                "inGameName": "pastelgrilpll",
-                "rank": "Helper",
-                "skinUrlOrPathToFile": "",
-                "rankColor": "rgba(250, 67, 67, 0.918)"
-            },
-            {
                 "inGameName": "maritty",
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "",
@@ -49,13 +43,7 @@
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "",
                 "rankColor": "rgba(250, 67, 67, 0.918)"
-            },
-            {
-                "inGameName": "ItzNightK1ing",
-                "rank": "Helper",
-                "skinUrlOrPathToFile": "",
-                "rankColor": "rgba(250, 67, 67, 0.918)"
-            }    
+            }   
         ]
     }
 }
