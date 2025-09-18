@@ -10,20 +10,24 @@
 
 :root {
   --main-font: 'Inter', sans-serif;
-  --main-color: #459de6;
+  /* --main-color: #459de6; */
+  --main-color: #e4b124;
   --background-color: #1d1f20;
   --white-color: #FFFFFF;
   --black-color: #000000;
   --description-color: #D2D0D0;
 
-  --green-color: #4accff;
+  --green-color: #ffc04a;
   --ip-copied-background: rgba(15, 116, 163, 0.17);
-  --ip-copied-icon-background: rgba(16, 202, 193, 0.521);
+  /* --ip-copied-icon-background: rgba(16, 202, 193, 0.521); */
+  --ip-copied-icon-background: rgba(199, 202, 16, 0.521);
 
-  --copy-ip-button-background: rgba(23, 162, 243, 0.637);
+  /* --copy-ip-button-background: rgba(23, 162, 243, 0.637); */
+  --copy-ip-button-background: rgba(247, 204, 13, 0.589);
   --how-to-join-button-background: #5865f2ad;
   --stats-background: rgba(110, 110, 110, 0.137);
-  --stat-icon-background-2: rgba(41, 156, 202, 0.432);
+  /* --stat-icon-background-2: rgba(41, 156, 202, 0.432); */
+  --stat-icon-background-2: rgba(202, 159, 41, 0.432);
 
   --scroll-bar: rgba(210, 208, 208, 0.3);
   --scroll-bar-hover: #555555FF;
@@ -103,7 +107,6 @@ body {
   border-width: 0.5px;
   border-style: solid;
 }
-
 
 .navbar-global a {
   text-decoration: none;

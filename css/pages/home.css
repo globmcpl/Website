@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 250px;
+    gap: 90px;
     max-width: 1200px;
     width: 100%;
     padding: 0 20px;
@@ -76,13 +76,31 @@
     font-size: 18px;
     font-weight: 600;
 }
-
 #header-default .content .left .server-name h1 {
-    color: var(--main-color);
-    text-transform: uppercase;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Press Start 2P", monospace; /* opcjonalnie dla pixel vibe */
+
+    /* Gradient złoty */
+    background: linear-gradient(
+        180deg,
+        #fff8a5 0%,
+        #ffd700 25%,
+        #e6c200 50%,
+        #b8860b 75%,
+        #8b7500 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Kontur w stylu MC */
+    text-shadow: 2px 2px 0px #e0b348;
+
+    /* Opcjonalny lekki glow */
+    filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.5));
 }
+
 
 #header-default .server-description {
     margin-bottom: 7px;
@@ -160,7 +178,7 @@
 }
 
 .start-img {
-    max-width: 380px;
+    max-width: 260px;
     height: auto;
 }
 
@@ -188,7 +206,7 @@
 .fa-circle-down:hover {
     transition:0.5s;
     font-size: 4.1rem;
-    color: #4d95d8 !important;
+    color: #d8ca4d !important;
 }
 
 #about {
@@ -318,7 +336,7 @@
     flex-shrink: 0;
     width: 50px;
     height: 50px;
-    background-color: rgba(61, 144, 252, 0.897);
+    background-color: rgba(223, 180, 39, 0.945);
     border-radius: 30%;
     display: flex;
     justify-content: center;
@@ -326,7 +344,7 @@
   }
   
   .feature-icon i {
-    color: #fff;
+    color: #070303;
     font-size: 18px;
   }
   
