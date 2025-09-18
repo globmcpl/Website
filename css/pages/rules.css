@@ -69,19 +69,19 @@
     font-weight: 600;
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     border-radius: 8px;
-    background: rgb(58, 111, 190);
+    background: rgb(230, 175, 74);
     transition: background 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .btn-rule:hover {
-    background: rgba(58, 111, 190, 0.74);
+    background: rgb(224, 156, 30);
     transform: scale(1.05); 
     transition: transform 0.5s ease-in-out; 
-    color: #ffffff;
+    color: #000000;
 }
 .fa-cloud-arrow-down{
     margin-right: 2px;
