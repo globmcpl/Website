@@ -80,7 +80,7 @@
     font-size: 60px;
     font-weight: 900;
     text-transform: uppercase;
-    font-family: "Press Start 2P", monospace; /* opcjonalnie dla pixel vibe */
+    font-family: "Press Start 2P", monospace; 
 
     /* Gradient złoty */
     background: linear-gradient(
@@ -94,13 +94,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    /* Kontur w stylu MC */
     text-shadow: 2px 2px 0px #e0b348;
 
-    /* Opcjonalny lekki glow */
     filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.5));
 }
-
 
 #header-default .server-description {
     margin-bottom: 7px;
