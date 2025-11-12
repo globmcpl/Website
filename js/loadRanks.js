@@ -13,15 +13,15 @@ const createHeaders = (data, table) => {
         </p>
     `
 
-    if (rank.name === 'MVIP'){
-      rankRequired =
-      `
-        <br>
-          <p class="rank-required">
-            Wymaga rangi SVIP+
-        </p>
-      `
-    }
+    // if (rank.name === 'MVIP'){
+    //   rankRequired =
+    //   `
+    //     <br>
+    //       <p class="rank-required">
+    //         Wymaga rangi SVIP+
+    //     </p>
+    //   `
+    // }
 
     thead +=
     `
@@ -33,7 +33,6 @@ const createHeaders = (data, table) => {
       background-clip: text;
       ">
         [${rank.name}]
-        ${rankRequired}
       </p>
     </th>`;
   })

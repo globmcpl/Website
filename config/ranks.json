@@ -294,7 +294,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>49 monet<b/>"
+                    "Monety": "<b>39 monet<b/>"
                 }
 
             },
@@ -385,7 +385,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>69 monet<b/>"
+                    "Monety": "<b>49 monet<b/>"
                 }
 
             },
@@ -467,7 +467,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Czas trwania": "<b>miesiąc<b/>"
+                    "Czas trwania": "<b>cała edycja<b/>"
                 }
 
             },
@@ -476,7 +476,7 @@
                 "text-color": "black",
                 "color": "#ACAAAA",
                 "attributes": {
-                    "Monety": "<b>29 monet<b/>"
+                    "Monety": "<b>79 monet<b/>"
                 }
 
             },
@@ -510,7 +510,7 @@
                 "color": "#ACAAAA",
                 "attributes": {
                     "Liczba domów": "8 domów",
-                    "Liczba działek": "3 działki",
+                    "Liczba działek": "4 działki",
                     "Liczba aukcji": "15 aukcji",
                     "Liczba warpów": "6 warpów",
                     "Podwójne głosy do pinaty": true,           

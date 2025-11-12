@@ -5,7 +5,7 @@
     },
     {
         "question": "Na jaką wersje jest serwer?",
-        "answer": "Wejście na serwer jest możliwe tylko na wersji <b>1.21.4</b> Stawiamy tylko na najnowsze wersje!"
+        "answer": "Wejście na serwer jest możliwe tylko na wersji <b>1.21.8</b> Stawiamy tylko na najnowsze wersje!"
     },
     {
         "question": "Czy gra na serwerze wymaga instalacji modyfikacji?",
@@ -17,6 +17,6 @@
     },
     { 
         "question": "Jakie tryby są dostępne na serwerze?", 
-        "answer": "Na serwerze dostępne sa dwa tryby <b>Survival</b> oraz <b>SkyWorld</b>. W przyszłości planujemy dodać inne tryby." 
+        "answer": "Na serwerze dostępne sa dwa tryby <b>Survival</b> oraz <b>Parkour</b>. W przyszłości planujemy dodać inne tryby." 
     }
 ]
