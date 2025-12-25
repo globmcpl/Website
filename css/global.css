@@ -211,6 +211,20 @@ body {
   justify-content: space-between;
 }
 
+footer a {
+  color: inherit;    
+  font-weight: bold; 
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+footer a:hover {
+  color: inherit;     
+  text-decoration: underline;
+}
+
+
 #footer p {
   color: var(--description-color);
   font-size: 17px;
