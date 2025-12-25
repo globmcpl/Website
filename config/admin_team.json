@@ -27,23 +27,30 @@
     "helpersTeam": {
         "Helperzy": [
             {
-                "inGameName": "Poniaczy",
+                "inGameName": "jxhpv",
+                "rank": "Helper",
+                "skinUrlOrPathToFile": "../images/skin/default.png",
+                "rankColor": "rgba(250, 67, 67, 0.918)"
+            },
+            {
+                "inGameName": "Coviniasty",
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "",
                 "rankColor": "rgba(250, 67, 67, 0.918)"
-            }   , 
+            },   
             {
-                "inGameName": "Nitashiiiiii",
+                "inGameName": "dajkrzys",
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "",
                 "rankColor": "rgba(250, 67, 67, 0.918)"
             },
             {
-                "inGameName": "jxhpv",
+                "inGameName": "koko098",
                 "rank": "Helper",
                 "skinUrlOrPathToFile": "../images/skin/default.png",
                 "rankColor": "rgba(250, 67, 67, 0.918)"
             }
+                             
         ]
     }
 }
