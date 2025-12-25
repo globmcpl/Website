@@ -11,22 +11,45 @@ const getDiscordOnlineUsers = async () => {
   }
 }
 
+// export const getMinecraftOnlinePlayers = async () => {
+//   try {
+//       const apiUrl = `https://api.mcstatus.io/v2/status/java/globmc.pl`;
+//       let response = await fetch(apiUrl);
+//       let data = await response.json();
+
+//         if (!data.online || !data.players) {
+//             return "";
+//         }
+
+//       return data.players.online;
+//   } catch (e) {
+//       console.log(e);
+//       return "";
+//   }
+// }
+
 export const getMinecraftOnlinePlayers = async () => {
   try {
-      const apiUrl = `https://api.mcstatus.io/v2/status/java/globmc.pl`;
-      let response = await fetch(apiUrl);
-      let data = await response.json();
+    const response = await fetch(
+      "https://globmc-api.norr-bitt.workers.dev/",
+      { cache: "no-store" }
+    );
 
-        if (!data.online || !data.players) {
-            return "";
-        }
-
-      return data.players.online;
-  } catch (e) {
-      console.log(e);
+    if (!response.ok) {
+      console.error("Worker HTTP error:", response.status);
       return "";
+    }
+
+    const data = await response.json();
+
+    return typeof data.online === "number" ? data.online : 0;
+
+  } catch (e) {
+    console.error("Worker fetch error:", e);
+    return "";
   }
-}
+};
+
 
 const setMinecraftOnlineUsers = async () => {
   minecraftOnlinePlayers.innerHTML = await getMinecraftOnlinePlayers()
