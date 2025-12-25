@@ -13,9 +13,13 @@ const getDiscordOnlineUsers = async () => {
 
 export const getMinecraftOnlinePlayers = async () => {
   try {
-      const apiUrl = `https://api.mcsrvstat.us/2/globmc.pl`;
+      const apiUrl = `https://api.mcstatus.io/v2/status/java/globmc.pl`;
       let response = await fetch(apiUrl);
       let data = await response.json();
+
+        if (!data.online || !data.players) {
+            return "";
+        }
 
       return data.players.online;
   } catch (e) {
