@@ -135,7 +135,7 @@ body {
   margin: auto 0 auto 0;
   color: var(--white-color);
   font-weight: 900;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .navbar-global .links {
@@ -147,7 +147,7 @@ body {
 
 .navbar-global .links .link {
   color: var(--description-color);
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 600;
   text-decoration: none;
   position: relative;
