@@ -35,7 +35,8 @@
     align-items: center;
     background: #252525a6;    
     border-radius: 15px;
-    border: #9b9b9b2a solid 1px;
+    border: #9b9b9b60 solid 3px;
+    /* border: #ecececef solid 3px; */
     padding-left: 40px; 
     padding-right: 40px;
     padding-top: 55px;

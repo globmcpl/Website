@@ -11,7 +11,14 @@ const updateTeam = async (team, teamName) => {
         </div>
     `;
     group.innerHTML = groupSchema;
-    atContent.appendChild(group);
+    const managementRow = document.getElementById("management-row");
+
+    if (teamName === "zarząd" || teamName === "developerzy") {
+        managementRow.appendChild(group);
+    } else {
+        atContent.appendChild(group);
+    }
+
     
     for (const user in team) {
         await updateUser(team[user], team, teamName); 

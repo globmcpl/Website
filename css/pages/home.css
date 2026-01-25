@@ -10,9 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
     overflow: hidden;
-    background: rgba(27, 27, 27, 0.877); 
+    background: rgba(10, 7, 1, 0.884); 
 }
 
 #header-default::before {
@@ -25,8 +24,8 @@
     background-image: url("../../images/background.webp"); 
     background-size: cover;
     background-position: center;
+    filter: blur(12px);
     z-index: -1;
-    border-radius: 20px;
     opacity: 0.7;
 }
 
@@ -46,7 +45,7 @@
 .desc-element{
     display: inline-block;
     padding: 6px;
-    background-color: rgba(78, 78, 78, 0.192);
+    background-color: rgba(78, 78, 78, 0.288);
     border-radius: 19px;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -82,7 +81,6 @@
     text-transform: uppercase;
     font-family: "Press Start 2P", monospace; 
 
-    /* Gradient złoty */
     background: linear-gradient(
         180deg,
         #fff8a5 0%,
@@ -121,7 +119,8 @@
 
 #header-default .content .left .buttons .copy-ip {
     background: var(--copy-ip-button-background);
-    border: 2px solid var(--main-color);
+    /* border: 2px solid var(--main-color); */
+    border: 3px solid rgba(255, 255, 255, 0.644); 
     border-radius: 7px;
     padding: 10px 30px;
     color: var(--white-color);
@@ -138,10 +137,11 @@
 
 #header-default .content .left .buttons .how-to-join {
     background: var(--how-to-join-button-background);
-    border: 2px solid rgba(117, 124, 226, 0.815);
+    /* border: 2px solid rgba(117, 124, 226, 0.815); */
+    border: 3px solid rgba(255, 255, 255, 0.644);
     border-radius: 7px;
     padding: 10px 30px;
-    color: var(--description-color);
+    color: var(--white-color);
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
@@ -286,9 +286,10 @@
     width: 210px;
     height: calc(100% - 40px);
     border-radius: 40px 3px;
-    background: rgba(93, 95, 92, 0.082);
+    background: rgba(93, 95, 92, 0.726);
+    border: 2.5px solid rgba(255, 255, 255, 0.644);  
     z-index: 0;
-    bottom: 5px;
+    bottom: 7px;
     left: 75px;
 }
 @keyframes rotate {
@@ -306,8 +307,7 @@
 
 #features {
     padding: 40px 46px;
-    
-    background: rgba(93, 95, 92, 0.082);
+    background: rgba(165, 167, 164, 0.082);
     display: flex;
     justify-content: center;
   }
@@ -323,10 +323,11 @@
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    background: rgba(0, 0, 0, 0.2);
+    background: var( --background-color);
     border-radius: 8px;
     padding: 20px;
     transition: 0.3s;
+    border: 2.5px solid rgba(221, 219, 219, 0.644); ;
   }
   
   .feature-icon {
@@ -428,8 +429,9 @@
 }
 
 #faq .content .accordion .accordion-item {
-    background: var(--stats-background);
+    background: rgba(71, 71, 71, 0.411); 
     border-radius: 5px;
+    border: 3px solid rgba(255, 255, 255, 0.411); 
 } 
 #faq .content .accordion .accordion-item .accordion-item-header {
     padding: 20px 50px 20px 20px;
@@ -466,6 +468,7 @@
     border-top: 1px solid var(--stats-background);
     color: var(--description-color);
 }
+
 
 /*Animations*/
 @keyframes float {

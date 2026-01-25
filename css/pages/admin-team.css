@@ -5,11 +5,13 @@
     padding-left: 46px;
     padding-right: 46px;
 }
+
 /*Admin-Team*/
 #admin-team .content {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 }
 
 #admin-team .group {
@@ -20,7 +22,7 @@
 
 #admin-team .group .rank-title {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
     color: var(--white-color);
     position: relative;
 }
@@ -73,6 +75,11 @@
     font-weight: 700;
 }
 
+#admin-team .name{
+    font-family: 'Barlow', 'Trebuchet MS', sans-serif;
+    margin-top: 2px;
+}
+
 #admin-team .group .users .user .rank {
     color: var(--white-color);
     font-size: 17px;
@@ -87,6 +94,36 @@
     font-weight: 600;
     font-family: 'Barlow', 'Trebuchet MS', sans-serif;
 }
+
+.group-row {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+#admin-team .group .users .user {
+    background: var(--stats-background);
+    border: 3px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 20px 18px;
+    width: 200px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#admin-team .group .users .user:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.4);
+    border-color: var(--main-color);
+}
+
+#admin-team .group .users .user img {
+    max-width: 120px;
+    border-radius: 10px;
+    border: 3px solid var(--main-color);
+}
+
 
 /*Footer*/
 #footer {

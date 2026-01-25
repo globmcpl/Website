@@ -12,18 +12,18 @@
   --main-font: 'Inter', sans-serif;
   /* --main-color: #459de6; */
   --main-color: #e4b124;
-  --background-color: #1d1f20;
+  --background-color: #000000;
   --white-color: #FFFFFF;
   --black-color: #000000;
   --description-color: #D2D0D0;
 
   --green-color: #ffc04a;
-  --ip-copied-background: rgba(15, 116, 163, 0.17);
+  --ip-copied-background: rgba(0, 0, 0, 0.17);
   /* --ip-copied-icon-background: rgba(16, 202, 193, 0.521); */
   --ip-copied-icon-background: rgba(199, 202, 16, 0.521);
 
   /* --copy-ip-button-background: rgba(23, 162, 243, 0.637); */
-  --copy-ip-button-background: rgba(247, 204, 13, 0.589);
+  --copy-ip-button-background: rgba(146, 107, 24, 0.877);
   --how-to-join-button-background: #5865f2ad;
   --stats-background: rgba(110, 110, 110, 0.137);
   /* --stat-icon-background-2: rgba(41, 156, 202, 0.432); */
@@ -58,7 +58,6 @@ body {
   background: var(--background-color);
   transition: 0.3s ease-in-out;
 }
-
 
 .online {
   color: var(--white-color);
@@ -136,7 +135,7 @@ body {
   margin: auto 0 auto 0;
   color: var(--white-color);
   font-weight: 900;
-  font-size: 19px;
+  font-size: 22px;
 }
 
 .navbar-global .links {
@@ -148,7 +147,7 @@ body {
 
 .navbar-global .links .link {
   color: var(--description-color);
-  font-size: 18.5px;
+  font-size: 21px;
   font-weight: 600;
   text-decoration: none;
   position: relative;
