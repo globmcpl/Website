@@ -19,7 +19,6 @@ const updateTeam = async (team, teamName) => {
         atContent.appendChild(group);
     }
 
-    
     for (const user in team) {
         await updateUser(team[user], team, teamName); 
     }
