@@ -63,27 +63,38 @@ function selectMember(index) {
 
 const updateTeam = async (team, teamName) => {
 
-    for (const user of team) {
+    const members = await Promise.all(
+        team.map(async (user) => {
 
-        let skin = user.skinUrlOrPathToFile;
+            let skin = user.skinUrlOrPathToFile;
+            let head = user.headUrlOrPathToFile;
 
-        if (!skin) {
-            playerUUID = await getUuidByUsername(user.inGameName);
-            skin = await getSkinByUuid(playerUUID);
-            head = await getFaceByUuid(playerUUID);
-        }
+            if (!skin) {
 
-        teamMembers.push({
-            name: user.inGameName,
-            rank: user.rank,
-            rankColor: user.rankColor,
-            team: teamName,
-            head: head,
-            skin: skin,
-            description: user.description || `${user.rank} w zespole ${teamName}`
-        });
-    }
-}
+                const uuid = await getUuidByUsername(user.inGameName);
+
+                [skin, head] = await Promise.all([
+                    getSkinByUuid(uuid),
+                    getFaceByUuid(uuid)
+                ]);
+            }
+
+            return {
+                name: user.inGameName,
+                rank: user.rank,
+                rankColor: user.rankColor,
+                team: teamName,
+                head,
+                skin,
+                description:
+                    user.description ||
+                    `${user.rank} w zespole ${teamName}`
+            };
+        })
+    );
+
+    teamMembers.push(...members);
+};
 
 const getSkinByUuid = async (playerUUIID) => {
     try {
@@ -188,23 +199,27 @@ const getUuidByUsername = async (username) => {
 }
 
 const executeLoad = async () => {
-    const response = await fetch('config/team.json');
+    const response = await fetch("config/team.json");
     const data = await response.json();
 
-    for (const teamKey in data) {
+    const promises = [];
 
+    for (const teamKey in data) {
         const teamContent = data[teamKey];
 
         for (const teamName in teamContent) {
-
-            await updateTeam(
-                teamContent[teamName],
-                teamName
+            promises.push(
+                updateTeam(
+                    teamContent[teamName],
+                    teamName
+                )
             );
         }
     }
 
+    await Promise.all(promises);
+
     renderTeam();
-}
+};
 
 executeLoad();
