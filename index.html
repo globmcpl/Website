@@ -1,203 +1,332 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="GlobMC to innowacyjny Survival, 
-    który przenosi graczy do epickiego świata na wersji 1.21+, 
-    wzbogacony nowymi mechanikami">
+  <title>GlobMC | Serwer Survival</title>
+  <meta name="description" content="GlobMC to innowacyjny Survival, który przenosi graczy do epickiego świata na wersji 1.21.11, wzbogacony nowymi mechanikami.">
 
-    <link rel="icon" href="images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <meta name="theme-color" content="#1a1a1a">
 
-    <link rel="stylesheet" href="css/global.css?v=2">
-    <link rel="stylesheet" href="css/pages/home.css">
-    <script src="https://kit.fontawesome.com/cf2753f47b.js" crossorigin="anonymous"></script>
+  <meta property="og:title" content="GlobMC | Serwer Survival">
+  <meta property="og:description" content="GlobMC to innowacyjny Survival na wersji 1.21.11.">
+  <meta property="og:image" content="https://globmc.pl/img/logo.png">
+  <meta property="og:url" content="https://globmc.pl">
+  <meta property="og:type" content="website">
 
-    <title>GlobMc | Serwer Survival </title>
+  <link rel="canonical" href="https://globmc.pl/">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/components/feature.css">
+  <link rel="stylesheet" href="style/components/team.css">
+  <link rel="stylesheet" href="style/components/join.css">
+  <link rel="stylesheet" href="style/components/footer.css">
+
+  <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Navbar-->
-    <div class="navbar-global">
-        <div class="menu-mobile">
-            <a href="/">
-                <div class="logo">
-                    <img src="images/logo_background.png" alt="Server logo" class="logo-img">
-                    <h3 class="server-name nav-name">GLOBMC.PL</h3> 
-                    <div class="online">
-                        <div class="online-indicator"></div>
-                        <div class="online-count">-</div> 
-                        <div>w grze</div> 
-                      </div>                      
-                </div>
-            </a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand" aria-label="GlobMC">
+        <img src="assets/img/logo.png" alt="GlobMC Logo" class="logo">
+        <span>GlobMC</span>
+      </div>
 
-            <div class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+      <nav class="nav" aria-label="Nawigacja główna">
+        <a href="/">Start</a>
+        <a href="#features">O serwerze</a>
+        <a href="#team">Team</a>   
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-discord" href="https://discord.com/invite/ApygwthSup" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-discord"></i>
+            DISCORD
+        </a>
+
+        <a class="btn btn-primary" href="https://wiki.globmc.pl" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-book"></i>
+            WIKI
+        </a>
+
+        <a class="btn btn-store" href="https://sklep.globmc.pl" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-cart-shopping"></i>
+            SKLEP
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">
+          <i class="fa-solid fa-bolt"></i>
+          Nowoczesny serwer Minecraft
+        </span>
+        <h1>Zagraj na serwerze pełnym przygód</h1>
+        <p>
+          GlobMC to serwer Survival stworzony z myślą o wyniesieniu rozgrywki na wyższy poziom. 
+          Oferujemy unikalne funkcje i mechaniki bez potrzeby instalowania modów. 
+          Odkrywaj piękne krajobrazy, spotykaj wyjątkowe zwierzęta i ciesz się świeżym podejściem do klasycznego Minecrafta. 
+          Dołącz już dziś i rozpocznij swoją przygodę!
+        </p>
+        
+        <div class="server-box">
+            <span class="server-pill">IP SERWERA</span>
+            <span class="server-ip" id="server-ip">globmc.pl</span>
+
+            <button class="copy-btn" onclick="copyIP()">
+              <i class="fa-regular fa-copy"></i>
+            </button>
         </div>
 
-        <div class="links">
-            <a href="/" class="link active">Start</a>
-            <a href="/rules" class="link">Regulamin</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://sklep.globmc.pl/" class="link">Sklep</a>
-            <a href="/ranks" class="link">Rangi</a> 
-            <a href="/admin-team" class="link">Team</a>
-            <!-- <a target="_blank" rel="noopener noreferrer" href="https://wiki.globmc.pl/" class="wiki-link link">Wiki</a>      -->
+        <div class="hud">
+          <div id="minecraft-status" class="status">
+              <span class="status-dot"></span>
+              Online: - graczy
+          </div>
+          <div class="socials" id="discord" aria-label="Social media">
+              <a class="social discord" href="https://discord.com/invite/ApygwthSup" target="_blank" title="Discord">
+                  <i class="fa-brands fa-discord"></i>
+              </a>
+
+              <a class="social youtube" href="https://www.youtube.com/@globmc" target="_blank" title="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+              </a>
+
+              <a class="social tiktok" href="https://www.tiktok.com/@globmc" target="_blank" title="TikTok"> 
+                  <i class="fa-brands fa-tiktok"></i>
+              </a>
+          </div>
         </div>
       </div>
 
-    <!--Header-->
-    <section id="header-default">
-        <div class="header-bg"></div>
-
-        <div class="content">
-
-            <div class="left">
-                <div class="server-name">
-                    <p> Twój Świat minecraft</p>
-                    <h1 class="minecraft-server-ip">globmc.pl</h1>
-                </div>
-                <div class="server-description">
-                    <div class="desc-element">
-                        <i class="fa-solid fa-gamepad icon"></i> Wersja: <b>1.21.11</b>    
-                    </div>
-                    <div class="desc-element">
-                        <i class="fa-solid fa-heart-circle-exclamation"></i> Dołącz do nas!   
-                    </div>  
-                </div>
-            
-                <div class="buttons">
-                    <button class="copy-ip"><i class="fa-solid fa-copy"></i> </i> globmc.pl</button>
-                    <a href=" https://dc.globmc.pl/" target="_blank"><button class="how-to-join"><i class="fa-brands fa-discord"> </i> dc.globmc.pl</button></a>
-                </div>
-                <p class="ip-copied">IP zostało skopiowane!</p>
-            </div>
-
-            <div class="right">
-                <img src="images/logo.png" alt="Server logo" class="start-img">
-            </div>
+      <aside class="tiktok-panel">
+        <div class="panel-head">
         </div>
-        <div id="arrow-box">
-            <div id="arrow">
-                <a href="#about">
-                <i class="fa-solid fa-circle-down" width="100px", style="color: #dbc14a;"></i>
-                </a>
-            </div>
+        <div class="tiktok-frame">
+          <iframe
+              width="100%"
+              height="1080"
+              src="https://www.youtube.com/embed/_LOkJ66HXg0"
+              title="GlobMC yt video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
         </div>
-    </section>
+      </aside>
+    </div>
+  </main>
 
-    <!--About us-->
-    <section id="about">
-        <div class="content">
-            <div class="left">
-                <h2 class="section-title">Dlaczego nasz serwer?</h2>
-                <p class="about-us">
-                    GlobMC został stworzony z myślą o wzniesieniu trybu Survival na wyższy poziom. 
-                    Dzięki nowatorskim rozwiązaniom możesz cieszyć się oryginalnymi funkcjami,
-                     które nie wymagają instalacji żadnych dodatkowych modów. 
-                     Dołącz już dziś i zanurz się w świat nowych, pięknych widoków, dzikich i uroczych zwierząt 
-                     i innowacyjnych mechanik serwera, których nie znajdziesz na żadnym innym serwerze. 
-                     Nasz serwer łączy klasycznego Minecrafta z nowymi rozwiązaniami, zapewniając dynamiczną i świeżą rozgrywkę dla każdego. 
-                     Przygoda czeka na Ciebie!
+  <section id="features">
+    <div class="container">
+    <div class="section-title">
+        <span class="eyebrow">
+          <i class="fa-solid fa-heart"></i>
+          Dlaczego GlobMC?
+        </span>
+        <h2>Rozgrywka, której nie znajdziesz nigdzie indziej</h2>
+        <p>
+            Połączyliśmy klasyczny survival z autorskimi systemami,
+            ekonomią i wydarzeniami tworzonymi przez społeczność.
+        </p>
+    </div>
+
+      <div class="features">
+          <article class="feature">
+              <div class="feature-media">
+                  <img src="assets/gif/biomes.webp" alt="Generator świata">
+              </div>
+
+              <div class="feature-body">
+                  <div class="feature-icon">
+                      <i class="fa-solid fa-earth-americas"></i>
+                  </div>
+                  <h3>Nowy Generator Świata</h3>
+                <p>
+                    Odkrywaj całkowicie odmieniony świat pełen nowych biomów,
+                    wyjątkowych struktur oraz starannie zaprojektowanych lokacji.
+                    Każda wyprawa poza bazę może doprowadzić Cię do nowych odkryć,
+                    cennych surowców i miejsc, których nie znajdziesz w zwykłym Minecraftcie.
                 </p>
-            </div>
+              </div>
+          </article>
 
-            <div class="right">
-                <img src="images/start/info-section.webp" alt="Minecraft person" class="img-desc">
-                <div class="img-background"></div>
-            </div>
-        </div>
-    </section>
-    <!--Features-->
-    <section id="features">
-        <div class="features-container">
-          <div class="feature-box">
-            <div class="feature-icon">
-              <i class="fas fa-cogs"></i>
-            </div>
-            <div class="feature-description">
-              <h3>Nowe mechaniki</h3>
-              <p>
-                Odkryj nowe autorskie przedmioty, rudy, zbroje czy narzędzia i broń czy buduj piękne bazy z nowymi blokami 
-                oraz meblami lub dekoracjami ogrodowymi. To wszystko wraz z autorskimi teksturami dla każdego danego typu przedmiotu!
-              </p>
-            </div>
-          </div>
-      
-          <div class="feature-box">
-            <div class="feature-icon">
-              <i class="fas fa-map-marked-alt"></i>
-            </div>
-            <div class="feature-description">
-              <h3>Nowy generator</h3>
-              <p>
-                Zwiedzaj ogromny świat wraz z naszym autorskim generatorem, dzięki któremu przygoda i podróżowanie stają się epickie i unikalne! Czekają 
-                na Ciebie nowe biomy i struktury. Pokaż, że jesteś prawdziwym wojownikiem i rusz w niezapomnianą przygodę, tylko u nas na GlobMC!
-              </p>
-            </div>
-          </div>
-    
-          <div class="feature-box">
-            <div class="feature-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="feature-description">
-              <h3>Przyjazna społeczność</h3>
-              <p>
-                Dołącz do naszej zaangażowanej społeczności i wspólnie twórzmy przyjazne community oparte na wsparciu i przyjaznym traktowaniu. 
-                U nas nie ma miejsca na toksyczność. Przyjazna atmosfera panująca na serwerze pozwoli Ci poczuć się sobą.
-              </p>
-            </div>
-          </div>
-      
-          <div class="feature-box">
-            <div class="feature-icon">
-                <i class="fa-solid fa-lightbulb"></i>
-            </div>
-            <div class="feature-description">
-              <h3>Doświadczona administracja</h3>
-              <p>
-                Nasz serwer jest tworzony z myślą o graczach. W zarządzie serwera znajdują się weterani Minecrafta działający w branży serwerów Minecraft od ponad 8 lat. 
-                Wspólnie z resztą Administracji tworzymy innowacyjny serwer z masą nowych funkcji i cech.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-    <!--FAQs-->
-    <section id="faq">
-        <div class="content">
-            <div class="info">
-                <h2 class="section-title">Serwer <span>FAQ</span></h2>
-                <p class="section-description">Masz jakieś pytania? Ta sekcja może być pomocna!</p>
-            </div>
-            <!-- Table content will be generated by JavaScript -->
-            <div class="accordion faqList"></div>
-        </div>
-    </section>
-       
-    </section>
+          <article class="feature">
+              <div class="feature-media">
+                  <img src="assets/gif/items.gif" alt="Nowe przedmioty">
+              </div>
 
-    <!--Footer-->
-    <footer id="footer">
-    <p class="copyright">&copy; 2024-2026 <span class="server-name-footer">GlobMC.pl</span> Wszelkie prawa zastrzeżone.
-    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Norbit4" class="author">Created by Norbit4</a> 
-    </p>
-        <div class="social-links">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@globmc" class="link tiktok-link"><i class="fa-brands fa-tiktok"></i></a>
-          <!-- <a href="#" class="link instagram-link"><i class="fa-brands fa-square-instagram"></i></a> -->
-          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@globmc" class="link youtube-link"><i class="fa-brands fa-youtube"></i></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://dc.globmc.pl/" target="_blank" class="link discord-link-footer"><i class="fa-brands fa-discord"></i></a>
+              <div class="feature-body">
+                  <div class="feature-icon">
+                     <i class="fa-regular fa-compass"></i>
+                  </div>
+                  <h3>Nowe przedmioty</h3>
+
+                  <p>
+                      Zdobywaj dziesiątki unikalnych przedmiotów stworzonych specjalnie
+                      na potrzeby serwera. Potężne narzędzia, rzadkie artefakty i
+                      wyjątkowe wyposażenie pozwolą rozwijać swoją postać oraz odkrywać
+                      zupełnie nowe sposoby rozgrywki niedostępne w standardowym Survivalu.
+                  </p>
+              </div>
+          </article>
+
+          <article class="feature">
+              <div class="feature-media">
+                  <img src="assets/gif/event.webp" alt="Eventy">
+              </div>
+
+              <div class="feature-body">
+                  <div class="feature-icon">
+                      <i class="fa-solid fa-trophy"></i>
+                  </div>
+                  <h3>Eventy</h3>
+
+                  <p>
+                      Bierz udział w regularnych eventach organizowanych przez administrację,
+                      walcz z wymagającymi bossami i rywalizuj z innymi graczami o cenne nagrody.
+                      Każde wydarzenie oferuje nowe wyzwania, dzięki którym na serwerze zawsze
+                      dzieje się coś ciekawego.
+                  </p>
+              </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+
+      <div class="container">
+
+          <div class="section-title">
+              <span class="eyebrow">
+                <i class="fa-brands fa-web-awesome"></i>
+                Poznaj ekipę
+              </span>
+              <h2>Administracja GlobMC</h2>
+              <p>
+                  Poznaj osoby odpowiedzialne za rozwój, utrzymanie
+                  oraz codzienne funkcjonowanie serwera.
+              </p>
+          </div>
+
+          <div class="team-showcase">
+
+              <div class="team-info">
+                  <div id="selected-member"></div>
+
+                <div class="team-members-wrapper">
+
+                    <button class="team-arrow left" id="team-prev">
+                        &#10094;
+                    </button>
+
+                    <div id="team-members"></div>
+
+                    <button class="team-arrow right" id="team-next">
+                        &#10095;
+                    </button>
+
+                </div>
+              </div>
+
+              <div class="team-right">
+                  <img id="selected-skin" src="" alt="">
+              </div>
+
+          </div>
+
+      </div>
+
+  </section>
+
+<section id="join">
+  <div class="container">  
+    <div class="join-card">
+      <div> 
+        <h3>Jak dołączyć?</h3> 
+
+        <div class="join-steps">
+          <div class="join-step">
+            <span>1</span>
+            <div>
+              <h4>Uruchom Minecraft</h4>
+              <p>Włącz swój launcher i uruchom grę w wersji wspieranej przez serwer.</p>
+            </div>
+          </div>
+
+          <div class="join-step">
+            <span>2</span>
+            <div>
+              <h4>Dodaj serwer</h4>
+              <p>Przejdź do „Tryb wieloosobowy” i dodaj adres: <strong>globmc.pl</strong></p>
+            </div>
+          </div>
+
+          <div class="join-step">
+            <span>3</span>
+            <div>
+              <h4>Rozpocznij przygodę</h4>
+              <p>Połącz się z serwerem, odbierz startowe wyposażenie i zacznij grać!</p>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
+
+      <div class="join-image">
+        <img src="assets/gif/server-ip.webp" alt="Adres serwera GlobMC">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <a href="https://sklep.globmc.pl" target="_blank" class="footer-card">
+              <h4><i class="fa-solid fa-cart-shopping"></i> Sklep Premium</h4>
+              <p>Wesprzyj rozwój serwera i odbierz wyjątkowe nagrody.</p>
+          </a>
+
+          <a href="/" target="_blank" class="footer-card">
+              <h4><i class="fa-solid fa-scroll"></i> Regulamin</h4>
+              <p>Poznaj zasady i dowiedz się, jak wygląda rozgrywka.</p>
+          </a>
+
+          <div class="footer-socials">
+              <h4><i class="fa-solid fa-globe"></i> Social Media</h4>
+              <div class="social-links">
+                  <a href="https://discord.com/invite/ApygwthSup" target="_blank"> 
+                    <i class="fa-brands fa-discord"></i>
+                  </a>
+                  <a href="https://www.youtube.com/@globmc" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="https://www.tiktok.com/@globmc" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+              </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024-2026 GlobMC. Wszelkie prawa zastrzeżone.</p>
+            <p>Stworzone przez <a href="https://github.com/Norbit4" target="_blank" rel="noopener noreferrer">Norbit4</a>.</p>
+            <p>Serwer globmc.pl nie jest w żaden sposób powiązany z firmą Mojang lub Microsoft.</p>
+        </div>
+      </div>
+  </footer>
+
+  <script src="scripts/copyIp.js"></script>
+  <script src="scripts/loadTeam.js"></script>
+  <script src="scripts/getOnline.js"></script>
 </body>
-<script type="module" src="js/getAsynchronusStats.js"></script>
-<script src="js/mobileNavbar.js"></script>
-<script src="js/copyIp.js"></script>
-<script src="js/loadFaq.js"></script>
-<script src="js/script.js"></script>
 </html>
