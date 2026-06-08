@@ -197,6 +197,7 @@
 }
 
 @media (max-width: 900px) {
+
     .feature,
     .feature:nth-child(even) {
         flex-direction: column;
@@ -210,5 +211,27 @@
 
     .feature-body {
         text-align: center;
+        align-items: center;
+    }
+
+    .feature-icon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 18px;
+
+        border-radius: 12px;
+
+        margin: 0 auto 12px;
+    }
+
+    .feature-body h3 {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+
+    .feature-body p {
+        font-size: 0.9rem;
+        line-height: 1.6;
     }
 }
