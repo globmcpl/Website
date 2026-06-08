@@ -182,6 +182,35 @@
     text-transform: uppercase;
 
     line-height: 1.1;
+
+    transition: all .3s ease;
+}
+
+.feature-body h3::after {
+    content: "";
+
+    display: block;
+
+    width: 32px;
+    height: 2px;
+
+    margin-top: 10px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.15);
+
+    transition: .3s ease;
+}
+
+.feature:hover .feature-body h3 {
+    color: #fff;
+    text-shadow: 0 0 12px rgba(243,179,61,.35);
+}
+
+.feature:hover .feature-tags span {
+    border-color: rgba(243,179,61,.25);
+    background: rgba(243,179,61,.08);
 }
 
 .feature-body p {
@@ -212,6 +241,10 @@
     .feature-body {
         text-align: center;
         align-items: center;
+    }
+
+    .feature-body h3::after {
+        display: none;
     }
 
     .feature-icon {
