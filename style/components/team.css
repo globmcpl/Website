@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
 .team-showcase {
+    position: relative;
+
     display: grid;
     grid-template-columns: minmax(0, 1fr) 320px;
     gap: 50px;
@@ -8,24 +10,20 @@
 
     padding: 50px;
 
-    border-radius: 24px;
+    border-radius: 18px;
 
-    background:
-        radial-gradient(
-            circle at right center,
-            rgba(243,179,61,.06),
-            transparent 40%
-        ),
-        linear-gradient(
-            180deg,
-            rgba(255,255,255,.05),
-            rgba(255,255,255,.02)
-        );
+    background: #1e1f23;
 
-    border: 1px solid rgba(255,255,255,.08);
+    border: 2px solid #353840;
+
+    border-top-color: #4d525c;
+    border-left-color: #4d525c;
 
     box-shadow:
-        0 20px 50px rgba(0,0,0,.35);
+        inset 0 1px 0 rgba(255,255,255,.05),
+        0 10px 30px rgba(0,0,0,.35);
+
+    overflow: hidden;
 }
 
 .team-info {
@@ -121,6 +119,9 @@
     filter: grayscale(0%);
     opacity: 1;
 }
+.member-rank {
+    border-radius: 6px;
+}
 
 .team-avatar img {
     width: 100%;
@@ -138,11 +139,10 @@
 
 .team-right::before {
     content: "";
-
     position: absolute;
 
-    width: 260px;
-    height: 260px;
+    width: 250px;
+    height: 250px;
 
     border-radius: 50%;
 
@@ -153,7 +153,9 @@
             transparent 70%
         );
 
-    filter: blur(30px);
+    filter: blur(35px);
+
+    z-index: 0;
 }
 
 .team-right img {

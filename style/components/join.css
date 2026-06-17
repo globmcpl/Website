@@ -1,32 +1,49 @@
 .join-card {
-    padding: 28px;
+    padding: 42px;
+    gap: 40px;
+
     display: grid;
     grid-template-columns: 1.1fr .9fr;
-    gap: 20px;
     align-items: center;
 
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 22px;
+    background: #1e1f23;
 
-    background:
-        radial-gradient(circle at 80% 10%, rgba(79,124,255,.18), transparent 20%),
-        linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+    border: 2px solid #353840;
+
+    border-top-color: #4d525c;
+    border-left-color: #4d525c;
+
+    border-radius: 18px;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.25),
-        inset 0 1px 0 rgba(255,255,255,.05);
+        inset 0 1px 0 rgba(255,255,255,.05),
+        0 10px 30px rgba(0,0,0,.35);
+
+    overflow: hidden;
 }
 
 .join-card h3 {
     margin: 0 0 22px;
+
     font-size: 28px;
+    font-weight: 900;
+
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .join-image {
     min-height: 220px;
-    border-radius: 22px;
+
+    border-radius: 14px;
+
+    border: 2px solid #353840;
+
     overflow: hidden;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05),
+        0 6px 18px rgba(0,0,0,.25);
 }
 
 .join-image img {
@@ -49,15 +66,27 @@
 }
 
 .join-step span {
-    min-width: 40px;
-    height: 40px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #4f7cff, #6d95ff);
+    min-width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #2a2c31;
+
+    border: 2px solid #454850;
+
+    border-top-color: #5c616d;
+    border-left-color: #5c616d;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    color: #fff;
+
+    font-weight: 800;
+    color: palegoldenrod;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05);
 }
 
 .join-step h4 {
