@@ -93,7 +93,6 @@
     height: 48px;
 
     border-radius: 10px;
-
     overflow: hidden;
 
     cursor: pointer;
@@ -101,18 +100,26 @@
     border: 2px solid transparent;
 
     transition: .2s ease;
+
+    filter: grayscale(50%) brightness(0.8);
+    opacity: 0.8;
 }
 
 .team-avatar:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
+
+    filter: grayscale(15%) brightness(0.95);
+    opacity: 1;
 }
 
 .team-avatar.active {
     border-color: var(--accent);
 
-    box-shadow:
-        0 0 20px rgba(243,179,61,.25);
+    box-shadow: 0 0 20px rgba(243,179,61,.25);
+
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 .team-avatar img {
