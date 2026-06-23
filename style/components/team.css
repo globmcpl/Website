@@ -133,8 +133,11 @@
     position: relative;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    gap: 20px;
 }
 
 .team-right::before {
@@ -156,6 +159,38 @@
     filter: blur(35px);
 
     z-index: 0;
+}
+
+.team-right {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.member-quote {
+    position: relative;
+    z-index: 1;
+
+    width: 260px;
+    min-height: 3.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: #cfcfcf;
+    font-size: .95rem;
+    font-style: italic;
+
+    padding: 0 20px;
 }
 
 .team-right img {

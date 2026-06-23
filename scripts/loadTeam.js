@@ -51,7 +51,6 @@ function selectMember(index) {
                     ${member.rank}
                 </span>
             </div>
-
             <p class="member-description">
                 ${member.description}
             </p>
@@ -59,6 +58,7 @@ function selectMember(index) {
     `;
 
     document.getElementById("selected-skin").src = member.skin;
+    document.getElementById("member-quote").textContent = member.quote || "";
 }
 
 const updateTeam = async (team, teamName) => {
@@ -86,6 +86,7 @@ const updateTeam = async (team, teamName) => {
                 team: teamName,
                 head,
                 skin,
+                quote: user.quote || "",
                 description:
                     user.description ||
                     `${user.rank} w zespole ${teamName}`
@@ -149,7 +150,6 @@ function renderTeam() {
                         ${member.rank}
                     </span>
                 </div>
-
                 <p class="member-description">
                     ${member.description}
                 </p>
@@ -158,6 +158,7 @@ function renderTeam() {
         `;
 
         selectedSkin.src = member.skin;
+        document.getElementById("member-quote").textContent = member.quote || "";
     }
 
     teamMembers.forEach((member, index) => {
