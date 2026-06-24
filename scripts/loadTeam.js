@@ -125,7 +125,6 @@ const getFaceByUuid = async (playerUUIID) => {
         return "None";
     }
 }
-
 function renderTeam() {
     const randomIndex = Math.floor(Math.random() * teamMembers.length);
 

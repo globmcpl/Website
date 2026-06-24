@@ -8,7 +8,7 @@
 
     min-height: 250px;
 
-    padding: 50px;
+    padding: 45px;
 
     border-radius: 18px;
 
@@ -60,12 +60,10 @@
     max-width: 650px;
     color: #d4d4d4;
     line-height: 1.8;
-    font-size: 1rem;
+    font-size: 1rem; 
 }
 
 #team-members {
-    margin-top: auto;
-
     display: flex;
     align-items: center;
     gap: 12px;
@@ -87,8 +85,8 @@
 .team-avatar {
     flex-shrink: 0;
 
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
 
     border-radius: 10px;
     overflow: hidden;
@@ -207,8 +205,9 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    padding-top: 10px;
+
     margin-top: auto;
-    padding-top: 20px;
 }
 
 .team-arrow {
@@ -232,12 +231,6 @@
 .team-arrow:hover {
     color: var(--accent);
 }
-
-/* .team-arrow:hover {
-    background: rgba(243,179,61,.15);
-    color: var(--accent);
-    transform: scale(1.05);
-} */
 
 #team-members {
     display: flex;
@@ -285,6 +278,10 @@
     .member-rank {
         font-size: 13px;
         padding: 5px 12px;
+    }
+
+    .member-quote {
+        display: none;
     }
 
     .member-description {
